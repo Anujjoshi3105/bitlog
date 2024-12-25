@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Building with Next.js and Fauna",
+    "description": "Learn how to create a serverless micro-blogging platform using Next.js and Fauna database for a scalable architecture. This guide covers the integration process, database modeling, and implementing authentication. You'll explore how to optimize serverless functions and leverage Fauna's global distribution for low-latency queries. By the end, you'll have a robust, production-ready platform.",
+    "date": "2024-01-15",
+    "tags": ["Next.js", "Fauna", "Serverless"],
+    "img": "/blog1.jpg",
+    "author": {
+      "name": "Bhanu Teja P",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 5
+  },
+  {
+    "title": "Modern CSS Techniques",
+    "description": "Explore the latest CSS features and techniques for building beautiful, responsive web interfaces. This article delves into modern tools like CSS Grid, Flexbox, and custom properties. You'll also learn about performance optimization, accessibility best practices, and advanced selectors. These techniques will elevate your front-end design skills to the next level.",
+    "date": "2024-01-10",
+    "tags": ["CSS", "Web Design", "Frontend"],
+    "img": "/blog2.jpg",
+    "author": {
+      "name": "Emily Johnson",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 2
+  },
+  {
+    "title": "TypeScript Best Practices",
+    "description": "Discover essential TypeScript patterns and practices for building maintainable applications. This guide highlights advanced typing techniques, interface design, and error handling strategies. You'll also explore how to configure TypeScript for both client-side and server-side projects, ensuring robust and type-safe codebases. Perfect for developers looking to level up their TypeScript skills.",
+    "date": "2024-01-05",
+    "tags": ["TypeScript", "JavaScript", "Development"],
+    "img": "/blog3.jpg",
+    "author": {
+      "name": "Michael Brown",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 8
+  },
+  {
+    "title": "Introduction to Web3",
+    "description": "Understand the basics of Web3 technology and its potential to transform the internet. This beginner-friendly article explains blockchain fundamentals, decentralized applications (dApps), and smart contracts. You'll also gain insights into Web3's impact on data ownership, privacy, and the future of digital ecosystems. Ideal for anyone curious about this groundbreaking technology.",
+    "date": "2024-01-20",
+    "tags": ["Web3", "Blockchain", "Technology"],
+    "img": "/blog4.jpg",
+    "author": {
+      "name": "Sophia Wilson",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 12
+  },
+  {
+    "title": "React State Management in 2024",
+    "description": "A comprehensive guide to state management in React using modern libraries and best practices. This article examines the pros and cons of tools like Redux, Context API, and Zustand. You'll learn how to choose the right approach for your project and implement efficient state updates. Stay ahead with the latest trends in React development.",
+    "date": "2024-01-12",
+    "tags": ["React", "State Management", "JavaScript"],
+    "img": "/blog1.jpg",
+    "author": {
+      "name": "Liam Nguyen",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 1
+  },
+  {
+    "title": "Optimizing Web Performance",
+    "description": "Tips and techniques for optimizing the performance of your web applications. This article covers crucial topics like lazy loading, image optimization, and leveraging modern build tools. Learn how to reduce load times, enhance user experience, and implement best practices for faster, smoother websites. A must-read for performance-conscious developers.",
+    "date": "2024-01-08",
+    "tags": ["Web Performance", "Optimization", "Frontend"],
+    "img": "/blog2.jpg",
+    "author": {
+      "name": "Ethan Garcia",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 15
+  },
+  {
+    "title": "AI in Software Development",
+    "description": "Explore how AI tools are reshaping software development workflows. This article discusses AI-powered code generation, debugging, and performance optimization. You'll learn how to integrate AI into your development processes, improving efficiency and innovation. Whether you're a beginner or experienced developer, this guide offers valuable insights into the future of coding.",
+    "date": "2024-01-18",
+    "tags": ["AI", "Development", "Innovation"],
+    "img": "/blog2.jpg",
+    "author": {
+      "name": "Olivia Martinez",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 6
+  },
+  {
+    "title": "Full-Stack Development in 2024",
+    "description": "Learn the essential skills for becoming a proficient full-stack developer. This comprehensive guide covers front-end and back-end technologies, deployment strategies, and best practices. Discover how to build scalable applications using modern frameworks and cloud services. Perfect for aspiring full-stack developers looking to stay relevant in 2024.",
+    "date": "2024-01-25",
+    "tags": ["Full-Stack", "Development", "Career"],
+    "img": "/blog3.jpg",
+    "author": {
+      "name": "James Kim",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 9
+  },
+  {
+    "title": "Serverless with AWS Lambda",
+    "description": "Get started with serverless architecture using AWS Lambda and best practices for scaling. This tutorial explains event-driven workflows, integration with AWS services, and cost optimization strategies. By following this guide, you'll be able to deploy efficient, scalable serverless applications with ease.",
+    "date": "2024-01-30",
+    "tags": ["AWS", "Serverless", "Cloud"],
+    "img": "/blog4.jpg",
+    "author": {
+      "name": "Emma Anderson",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 4
+  },
+  {
+    "title": "GraphQL for Beginners",
+    "description": "Learn how to use GraphQL for querying data efficiently in your applications. This beginner's guide walks you through setting up a GraphQL server, defining schemas, and writing queries. You'll also discover the advantages of GraphQL over REST APIs, making it easier to handle complex data needs. A great starting point for API enthusiasts.",
+    "date": "2024-02-05",
+    "tags": ["GraphQL", "API", "Development"],
+    "img": "/blog4.jpg",
+    "author": {
+      "name": "Benjamin Carter",
+      "avatar": "/placeholder.svg?height=40&width=40"
+    },
+    "readTime": 3
+  }
+]

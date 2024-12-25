@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Basic",
+    "popular": false,
+    "price": 0,
+    "description": "Start your AI blogging journey with essential tools and features.",
+    "btn": "Start Now",
+    "features": [
+      { "feature": "AI content suggestions", "available": true },
+      { "feature": "Basic SEO optimization", "available": true },
+      { "feature": "Limited image generation", "available": true },
+      { "feature": "Basic grammar check", "available": true },
+      { "feature": "Single user access", "available": true },
+      { "feature": "Limited analytics", "available": true },
+      { "feature": "Customizable templates", "available": false },
+      { "feature": "Team collaboration tools", "available": false },
+      { "feature": "Advanced analytics", "available": false },
+      { "feature": "Priority support", "available": false }
+    ]
+  },
+  {
+    "title": "Pro",
+    "popular": true,
+    "price": 20,
+    "description": "Powerful tools for professional AI bloggers and growing teams.",
+    "btn": "Get Started",
+    "features": [
+      { "feature": "AI content suggestions", "available": true },
+      { "feature": "Advanced SEO optimization", "available": true },
+      { "feature": "Unlimited image generation", "available": true },
+      { "feature": "Comprehensive grammar check", "available": true },
+      { "feature": "Multiple user access", "available": true },
+      { "feature": "Detailed analytics", "available": true },
+      { "feature": "Customizable templates", "available": true },
+      { "feature": "Team collaboration tools", "available": true },
+      { "feature": "Advanced analytics", "available": true },
+      { "feature": "Priority support", "available": false }
+    ]
+  },
+  {
+    "title": "Enterprise",
+    "popular": false,
+    "price": 50,
+    "description": "Comprehensive AI blogging solutions for organizations and enterprises.",
+    "btn": "Contact Us",
+    "features": [
+      { "feature": "AI content suggestions", "available": true },
+      { "feature": "Advanced SEO optimization", "available": true },
+      { "feature": "Unlimited image generation", "available": true },
+      { "feature": "Comprehensive grammar check", "available": true },
+      { "feature": "Unlimited user access", "available": true },
+      { "feature": "Custom analytics dashboard", "available": true },
+      { "feature": "Customizable templates", "available": true },
+      { "feature": "Team collaboration tools", "available": true },
+      { "feature": "Advanced analytics", "available": true },
+      { "feature": "24/7 priority support", "available": true }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "href": "/"
+  },
+  {
+    "title": "Trending",
+    "href": "/trending"
+  },
+  {
+    "title": "Community",
+    "href": "/community"
+  },
+  {
+    "title": "Resources",
+    "href": "/resources"
+  },
+  {
+    "title": "Contact",
+    "href": "/contact"
+  }
+]
