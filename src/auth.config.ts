@@ -4,7 +4,7 @@ import Google from "next-auth/providers/google";
 import Github from "next-auth/providers/github";
 import Twitter from "next-auth/providers/twitter";
 import Discord from "next-auth/providers/discord";
-import Passkey from "next-auth/providers/passkey";
+//import Passkey from "next-auth/providers/passkey";
 import db from "./drizzle";
 import * as schema from "./drizzle/schema";
 import { oauthVerifyEmail } from "./actions/auth/auth";
@@ -162,9 +162,9 @@ export const authConfig = {
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
       allowDangerousEmailAccountLinking: true,
     }),
-    Passkey,
+    //Passkey,
   ],
-  experimental: {
+  /*  experimental: {
     enableWebAuthn: true,
-  },
+  },*/
 } as const satisfies NextAuthConfig;

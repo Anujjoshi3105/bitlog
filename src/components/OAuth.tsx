@@ -1,7 +1,7 @@
 "use client";
 
 import { FaDiscord, FaGithub, FaGoogle, FaTwitter } from "react-icons/fa6";
-import { GoPasskeyFill } from "react-icons/go";
+//import { GoPasskeyFill } from "react-icons/go";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import { oauthLogin } from "@/actions/auth/auth";
@@ -80,6 +80,7 @@ export default function OAuth() {
           aria-label="Twitter">
           <FaTwitter />
         </Button>
+        {/*
         <Button
           variant="outline"
           className="rounded-full"
@@ -87,7 +88,7 @@ export default function OAuth() {
           onClick={() => signIn("passkey")}
           aria-label="Passkey">
           <GoPasskeyFill />
-        </Button>
+        </Button>*/}
       </div>
       {errorMessage && (
         <p className="bg-destructive/10 p-2 rounded-sm select-none text-xs text-center font-medium text-destructive">
