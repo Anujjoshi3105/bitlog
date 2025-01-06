@@ -55,6 +55,7 @@
 
 ✅ User Database Integration  
 ✅ Contact Page  
+❌ Optimised SEO  
 ❌ Search and Filter Options  
 ❌ User Activity Tracking  
 ❌ Newsletter Subscription  
