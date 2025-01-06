@@ -1,20 +1,17 @@
 import HeroSearch from "@/sections/Home/HeroSearch";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Home.Hero");
   return (
-    <section className="mx-auto max-w-7xl text-center min-h-[50vh]">
-      <div className="select-none w-full">
-        <h3 className="mb-4 font-inter text-sm font-semibold">
-          Explore tech tutorials and insights
-        </h3>
-        <h1 className="mb-5 mx-auto max-w-2xl text-4xl font-bold md:text-5xl">
-          The Future of Learning
-        </h1>
-        <h2 className="mx-auto mb-8 max-w-md leading-6 font-medium text-primary/80">
-          Unlock smarter, faster content creation and elevate your tech
-          expertise seamlessly
-        </h2>
-      </div>
+    <section className="text-center min-h-[50vh] select-none flex flex-col items-center justify-center max-w-3xl mx-auto">
+      <h3 className="mb-4 font-inter text-sm font-semibold">{t("subtitle")}</h3>
+      <h1 className="mb-5 max-w-2xl text-4xl font-bold md:text-5xl">
+        {t("title")}
+      </h1>
+      <h2 className="mb-8 max-w-xl leading-6 font-medium text-primary/80">
+        {t("description")}
+      </h2>
       <HeroSearch />
     </section>
   );

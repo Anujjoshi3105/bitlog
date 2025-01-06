@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
-export default function notFound() {
+export default function NotFound() {
+  const t = useTranslations();
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center text-center">
       <div className="py-16 select-none">
@@ -9,12 +11,12 @@ export default function notFound() {
           404
         </p>
         <p className="text-4xl md:text-5xl font-bold tracking-wider mt-2">
-          Page Not Found
+          {t("notFound")}
         </p>
       </div>
       <Button asChild>
         <Link href="/" title="Return Home">
-          Return Home
+          {t("returnHome")}
         </Link>
       </Button>
     </div>

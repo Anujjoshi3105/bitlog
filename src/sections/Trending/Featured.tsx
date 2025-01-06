@@ -5,8 +5,10 @@ import BlogCard from "@/components/BlogCard";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import blog from "@/data/blogs.json";
+import { useTranslations } from "next-intl";
 
 export default function Featured({ maxblog = 4 }: { maxblog?: number }) {
+  const t = useTranslations("Trending.Featured");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError] = useState(false);
@@ -41,8 +43,8 @@ export default function Featured({ maxblog = 4 }: { maxblog?: number }) {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Featured Blogs</h1>
-      <h3 className="text-muted-foreground mb-6 italic">Top Picks for You</h3>
+      <h1 className="text-3xl font-bold">{t("title")}</h1>
+      <h3 className="text-muted-foreground mb-6 italic">{t("subtitle")}</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <BlogCard blog={blog[currentIndex]} variant="vertical" />
         <div className="flex flex-col justify-around">

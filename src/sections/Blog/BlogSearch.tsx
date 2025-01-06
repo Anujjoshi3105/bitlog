@@ -13,21 +13,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Loader, Search, X } from "lucide-react";
+import { Loader2, Search, X } from "lucide-react";
 import BlogCard from "@/components/BlogCard";
 import tags from "@/data/tags.json";
 import blogs from "@/data/blogs.json";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function BlogSearch() {
-  const [loading, setLoading] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const t = useTranslations();
+  const [loading, setLoading] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [sortBy, setSortBy] = useState("date");
-  const [dateRange, setDateRange] = useState("all");
+  const [sortBy, setSortBy] = useState<string>("date");
+  const [dateRange, setDateRange] = useState<string>("all");
   const [contentTypes, setContentTypes] = useState<string[]>([]);
-  const [fliteredBlogs, setFliteredBlogs] = useState(blogs);
+  const [fliteredBlogs, setFliteredBlogs] = useState<Blog[]>(blogs);
 
   useEffect(() => {
     setFliteredBlogs(blogs);
@@ -68,7 +70,7 @@ export default function BlogSearch() {
             <div className="relative flex-grow">
               <Input
                 className="rounded-full pr-10"
-                placeholder="Search articles..."
+                placeholder={t("Search")}
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
@@ -94,7 +96,7 @@ export default function BlogSearch() {
                 disabled={loading}
                 aria-label="Search">
                 {loading ? (
-                  <Loader className="h-4 w-4 animate-spin" />
+                  <Loader2 className="h-4 w-4 animate-spin" />
                 ) : (
                   <Search className="h-4 w-4" />
                 )}
@@ -120,7 +122,7 @@ export default function BlogSearch() {
           )}
           <div className="flex justify-center items-center">
             <Button asChild className="mt-6">
-              <Link href="/blog">View All</Link>
+              <Link href="/blog">{t("viewAll")}</Link>
             </Button>
           </div>
         </div>

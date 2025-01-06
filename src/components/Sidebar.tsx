@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import {
   UserIcon,
   SettingsIcon,
@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 import { cn } from "@/lib/utils";
+import { signOut, useSession } from "next-auth/react";
 
 const MOBILE_BREAKPOINT = 768;
 
@@ -38,7 +39,7 @@ const SidebarLinks = [
   {
     href: "/dashboard/settings",
     icon: <SettingsIcon />,
-    label: "Settings",
+    label: "Setting",
   },
 ];
 
@@ -65,7 +66,7 @@ export default function Sidebar() {
   return (
     <aside
       className={cn(
-        "bg-primary/5 relative flex flex-col items-center justify-between h-screen py-6 px-2 md:py-8 md:px-4 border-r transition-all duration-300 ease-in-out",
+        "bg-primary/10 relative flex flex-col items-center justify-between h-screen py-6 px-2 md:py-8 md:px-4 border-r transition-all duration-300 ease-in-out",
         isCollapsed || isMobile ? "w-20" : "w-64"
       )}>
       <UserInfo isCollapsed={isCollapsed || isMobile} />
@@ -82,6 +83,7 @@ export default function Sidebar() {
         <Button
           variant="ghost"
           size={isCollapsed ? "icon" : "default"}
+          onClick={() => signOut()}
           className={cn(isCollapsed ? "rounded-full" : "w-full justify-start")}>
           <LogOut className="w-15 h-15" />
           {!isCollapsed && <span className="ml-2">Log Out</span>}
@@ -99,8 +101,8 @@ export default function Sidebar() {
       {!isMobile && (
         <Button
           onClick={toggleSidebar}
-          variant="outline"
-          className="absolute top-1/2 -right-5 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-110"
+          variant="secondary"
+          className="absolute top-1/2 -right-5 rounded-full transition-transform duration-300 ease-in-out transform"
           size="icon"
           aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}>
           {isCollapsed ? <ChevronRight /> : <ChevronLeft />}
@@ -111,30 +113,32 @@ export default function Sidebar() {
 }
 
 function UserInfo({ isCollapsed }: { isCollapsed: boolean }) {
+  const session = useSession();
   return (
     <div className="flex flex-col justify-center items-center gap-4">
       <div className="flex justify-center items-center">
         <Avatar className="w-10 h-10">
           <AvatarImage
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-            alt="User avatar"
+            src={session.data?.user?.image || ""}
+            alt={session.data?.user?.name || ""}
           />
-          <AvatarFallback>AJ</AvatarFallback>
+          <AvatarFallback>{session.data?.user?.name?.charAt(0)}</AvatarFallback>
         </Avatar>
         {!isCollapsed && (
           <div className="ml-2 opacity-100">
-            <p className="font-semibold">Anuj Joshi</p>
-            <p className="text-xs text-muted-foreground">@anujjoshi3105</p>
+            <p className="font-semibold">{session.data?.user?.name}</p>
+            <p className="text-xs text-muted-foreground">
+              {session.data?.user?.email}
+            </p>
           </div>
         )}
       </div>
       <Badge
-        variant="secondary"
         className={cn(
           "transition-opacity duration-300",
           isCollapsed ? "opacity-0 w-0" : "opacity-100"
         )}>
-        admin
+        {session.data?.user?.role}
       </Badge>
     </div>
   );

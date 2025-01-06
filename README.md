@@ -1,6 +1,8 @@
-# Bitlog: The Future of Learning
+# [BITLOG: The Future of Learning](https://bitlog.netlify.app)
 
-Bitlog is a platform designed to deliver high-quality tutorials, insights, and tech stories to empower developers and foster a vibrant tech community. It combines advanced features and tools to create a seamless user experience for learners and content creators alike.
+**[BITLOG](https://bitlog.netlify.app)** is a blog platform designed to deliver high-quality tutorials, insights, and tech stories to empower developers and foster a vibrant tech community. It combines advanced features and tools to create a seamless user experience for learners and content creators alike.
+
+![alt text](public/image.png)
 
 ## Table of Contents
 
@@ -15,62 +17,87 @@ Bitlog is a platform designed to deliver high-quality tutorials, insights, and t
 
 ## Introduction
 
-Bitlog is a modern learning platform designed to provide developers with resources such as in-depth tutorials, real-world tech stories, and AI-powered tools. This README provides a comprehensive guide to setting up, running, and contributing to the project.
+[BITLOG](https://bitlog.netlify.app) is a modern learning blog platform designed to provide developers with resources such as in-depth tutorials, real-world tech stories, and AI-powered tools. This README provides a comprehensive guide to setting up, running, and contributing to the project.
 
 ## Features
 
 ### Frontend
 
 ✅ Responsive Design  
-❌ Dark Mode Toggle  
-❌ Animations and Transitions  
-❌ Multi-language Support  
-❌ Advanced Search Functionality  
+✅ Dark Mode Toggle  
+✅ English and German Language Support  
+✅ Interactive User Interface  
+❌ Progressive Web App (PWA) Support  
+❌ Modular Component Architecture  
+❌ Accessibility (WCAG Standards)  
+❌ Dark Theme Design  
+❌ Multi-language Expansion (French, Spanish, etc.)  
 ❌ Interactive Charts and Graphs  
 ❌ File Upload with Preview  
 ❌ Drag-and-Drop Interface  
 ❌ Real-Time Notifications  
-❌ Progressive Web App (PWA) Features
+❌ Context-Sensitive Help
 
 ### Authentication
 
-❌ Login  
-❌ Register  
-❌ Email Verification  
-❌ Forgot Password  
-❌ Two-Factor Authentication
+✅ Login  
+✅ Register  
+✅ Email Verification  
+✅ Forgot Password  
+✅ Verify User  
+✅ OAuth Providers (Google, GitHub, Twitter, Discord, Passkey)  
+✅ Session Management  
+✅ User Role Assignment  
+❌ Two-Factor Authentication  
+❌ Social Sign-On Enhancements
 
 ### Core Features
 
-❌ User Database Integration  
-❌ Contact Page  
+✅ User Database Integration  
+✅ Contact Page  
+❌ Search and Filter Options  
+❌ User Activity Tracking  
 ❌ Newsletter Subscription  
-❌ Blog Editor  
+❌ Blog Editor with Markdown Support  
 ❌ User Dashboard:
 
 - ❌ Add Content
 - ❌ Edit Content
-- ❌ User Settings
+- ❌ Advanced User Settings  
+  ❌ Personalized Recommendations  
+  ❌ Notification Preferences
 
 ### AI-Powered Tools
 
+❌ Text Completion Tool (Beta)  
 ❌ Blog Generator  
 ❌ Template Generator  
 ❌ Image Generator  
 ❌ Code Snippet Generator  
 ❌ Text Summarizer  
 ❌ Chatbot Integration  
-❌ Sentiment Analysis Tool
+❌ Sentiment Analysis Tool  
+❌ AI Content Optimization
 
 ### Payment Integration
 
+❌ Free Tier Access  
 ❌ Stripe Integration  
 ❌ PayPal Integration  
 ❌ Subscription Management  
-❌ Donation Support
+❌ Donation Support  
+❌ Tiered Pricing Plans
+
+### Collaboration Tools
+
+❌ Real-Time Collaboration  
+❌ Shared Workspaces  
+❌ Content Approval Workflows  
+❌ Version Control for Content
 
 ### Additional Features
 
+❌ Social Media Integration (Basic)  
 ❌ Social Media Sharing  
 ❌ Bookmark and Favorites  
 ❌ Real-Time Collaboration  
@@ -79,12 +106,21 @@ Bitlog is a modern learning platform designed to provide developers with resourc
 ❌ Analytics Dashboard  
 ❌ Customizable Themes  
 ❌ Offline Mode  
-❌ API for Third-Party Integration
+❌ API for Third-Party Integration  
+❌ Gamification (Badges, Points)  
+❌ Community Forums  
+❌ User Feedback Mechanisms  
+❌ Comprehensive Reporting Tools
 
 ## Tech Stack
 
 - **Frontend**: Next.js, React, TypeScript
 - **Styling**: Tailwind CSS, Shadcn
+- **Database**: Drizzle ORM, Neon PostgreSQL
+- **Authentication**: NextAuth.js
+- **AI Tools**: (currently being explored)
+- **Deployment**: Vercel, Docker
+- **Version Control**: Git, GitHub
 
 ## Installation
 
@@ -141,5 +177,3 @@ Contributions are welcome! Here's how you can get started:
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----

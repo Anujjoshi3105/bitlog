@@ -5,13 +5,23 @@ import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { FaBars, FaX } from "react-icons/fa6";
 import { useState } from "react";
-import navLinks from "@/data/navLinks.json";
 import { containerVars, menuVars, mobileLinkVars } from "@/data/animate";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import User from "./Auth/User";
 
 export default function Header() {
+  const t = useTranslations();
+  const navLinks = [
+    { href: "/", label: t("navLinks.home") },
+    { href: "/trending", label: t("navLinks.trending") },
+    { href: "/community", label: t("navLinks.community") },
+    { href: "/resources", label: t("navLinks.resources") },
+    { href: "/contact", label: t("navLinks.contact") },
+  ];
+
   const [open, setOpen] = useState(false);
-  const toggleMenu = () => setOpen((prevOpen) => !prevOpen);
+  const openMenu = () => setOpen(true);
   const closeMenu = () => setOpen(false);
 
   return (
@@ -24,9 +34,9 @@ export default function Header() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="origin-top fixed z-[1000] top-0 left-0 h-screen w-screen bg-muted text-center font-semibold uppercase">
+            className="origin-top fixed z-[100] top-0 left-0 h-screen w-screen bg-muted text-center font-semibold uppercase">
             <Button
-              onClick={toggleMenu}
+              onClick={closeMenu}
               variant="ghost"
               size="icon"
               className="absolute right-10 top-8 rounded-full active:scale-50 transition-transform duration-150 ease-in-out">
@@ -45,7 +55,7 @@ export default function Header() {
                     onClick={closeMenu}
                     className="link"
                     rel="noopener noreferrer">
-                    {link.title}
+                    {link.label}
                   </Link>
                 </motion.div>
               ))}
@@ -54,10 +64,7 @@ export default function Header() {
                 variants={mobileLinkVars}
                 className="flex justify-center items-center gap-2 mt-4">
                 <Button className="rounded-full" asChild>
-                  <Link href="/auth/login">Login</Link>
-                </Button>
-                <Button variant="outline" className="rounded-full" asChild>
-                  <Link href="/auth/register">Register</Link>
+                  <Link href="/auth">{t("joinNow")}</Link>
                 </Button>
               </motion.span>
             </motion.div>
@@ -66,8 +73,8 @@ export default function Header() {
       </AnimatePresence>
       {/* Desktop Menu */}
 
-      <nav className="p-4 md:p-8 relative top-2 left-1/2 transform -translate-x-1/2 w-[95vw] flex items-center justify-between">
-        <Link href="/">
+      <nav className="p-2 md:p-6 relative top-2 left-1/2 transform -translate-x-1/2 w-[95vw] flex items-center justify-between">
+        <Link href="/" className="hover:scale-110 duration-150">
           <Logo />
         </Link>
         <div className="uppercase absolute left-1/2 transform -translate-x-1/2 lg:flex hidden gap-8 font-semibold items-baseline text-sm">
@@ -77,26 +84,19 @@ export default function Header() {
               key={link.href}
               className="link"
               rel="noopener noreferrer">
-              {link.title}
+              {link.label}
             </Link>
           ))}
         </div>
         <div className="gap-2 flex justify-center items-center">
+          <User />
           <Button
-            onClick={toggleMenu}
+            onClick={openMenu}
             variant="ghost"
             size="icon"
-            className="md:hidden rounded-full active:scale-50 transition-transform duration-150 ease-in-out">
+            className="lg:hidden rounded-full active:scale-50 transition-transform duration-150 ease-in-out">
             <FaBars />
           </Button>
-          <span className="hidden md:flex justify-center items-center gap-2">
-            <Button className="rounded-full" asChild>
-              <Link href="/auth/login">Login</Link>
-            </Button>
-            <Button variant="outline" className="rounded-full" asChild>
-              <Link href="/auth/register">Register</Link>
-            </Button>
-          </span>
         </div>
       </nav>
     </header>

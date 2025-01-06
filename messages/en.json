@@ -1,0 +1,917 @@
+{
+  "Slogan": "The Future of Learning",
+  "notFound": "Page Not Found",
+  "returnHome": "Return to Home",
+  "LocaleLayout": {
+    "title": "Bitlog: The Future of Learning",
+    "description": "Bitlog is your go-to platform for exploring in-depth tutorials, expert insights, and real-world tech stories. Empowering developers with knowledge and fostering a vibrant tech community.",
+    "keywords": "Tech Tutorials, Tech Insights, Developer Community, AI, Machine Learning, Quantum Computing, Computer Vision, Technology Archives, Learning Platform, Tech Articles, Innovation, Future of Learning,Programming Guides, Tech News"
+  },
+  "Search": "Search the latest Tech Tutorials, Insights, Stories...",
+  "Description": "A developer's journey through in-depth tutorials, expert insights, and real-world stories. Empowering you with the knowledge and community to excel in tech.",
+  "Copyright": "All rights are reserved by",
+  "Auth": {
+    "title": "Welcome to BITLOG",
+    "description": "Sign in or create an account to get started",
+    "Verify": {
+      "title": "Verify Your Email",
+      "description": "A verification link has been sent to your email. Please click the link to verify your email.",
+      "Success": {
+        "title": "Email Verified Successfully",
+        "description": "Your email has been successfully verified. You can now access all features of your account.",
+        "btn": {
+          "label": "Go to Dashboard",
+          "loading": "Redirecting..."
+        }
+      },
+      "Error": {
+        "title": "Verification Failed",
+        "description": "We encountered an error while verifying your email. Please try again or contact support if the issue persists.",
+        "btn": {
+          "label": "Register",
+          "loading": "Redirecting..."
+        }
+      },
+      "Invalid": {
+        "title": "Invalid Token",
+        "description": "The verification link you used is invalid. This could be due to a typo or an already used link.",
+        "btn": {
+          "label": "Register",
+          "loading": "Verifying..."
+        }
+      },
+      "Expired": {
+        "title": "Token Expired",
+        "description": "Your verification link has expired. Please register again to request a new link to verify your email.",
+        "btn": {
+          "label": "Register",
+          "loading": "Redirecting..."
+        }
+      },
+      "back": "Back to Login"
+    },
+    "ResetPassword": {
+      "title": "Reset Password",
+      "description": "Enter your email below to reset your password",
+      "Success": {
+        "title": "Password Reset Link Sent",
+        "description": "A password reset link has been sent to your email. Please click the link to reset your password."
+      },
+      "Form": {
+        "NewPassword": {
+          "label": "New Password",
+          "placeholder": "Enter your new password"
+        },
+        "ConfirmPassword": {
+          "label": "Confirm Password",
+          "placeholder": "Confirm your new password"
+        }
+      },
+      "Error": {
+        "title": "Password Reset Failed",
+        "default": "Internal Server Error",
+        "400": "The email address provided is invalid. Please check and try again.",
+        "401": "This email is linked to an OAuth account and cannot be reset manually.",
+        "500": "An error occurred while processing your request. Please try again later."
+      },
+      "btn": {
+        "label": "Send Reset Link",
+        "loading": "Sending Reset Link..."
+      },
+      "back": "Back to Login",
+      "Status": {
+        "Invalid": {
+          "title": "Invalid Token",
+          "description": "The reset link you used is invalid. This could be due to a typo or an already used link.",
+          "btn": "Go to Login"
+        },
+        "Expired": {
+          "title": "Token Expired",
+          "description": "Your reset link has expired. Please login again to request a new link to reset your password.",
+          "btn": "Go to Login"
+        }
+      }
+    },
+    "ForgotPassword": {
+      "title": "Forgot Password",
+      "description": "Enter your email below to reset your password",
+      "Success": {
+        "title": "Password Reset Link Sent",
+        "description": "A password reset link has been sent to your email. Please click the link to reset your password."
+      },
+      "Error": {
+        "title": "Password Reset Failed",
+        "default": "Internal Server Error",
+        "400": "The email address provided is invalid. Please check and try again.",
+        "401": "This email is linked to an OAuth account and cannot be reset manually.",
+        "500": "An error occurred while processing your request. Please try again later."
+      },
+      "btn": {
+        "label": "Send Reset Link",
+        "loading": "Sending Reset Link..."
+      },
+      "back": "Back to Login"
+    },
+    "Login": {
+      "label": "Login",
+      "title": "Login to your account",
+      "description": "Enter your email below to login to your account",
+      "Success": {
+        "title": "Login Successful",
+        "description": "You have successfully logged in to your account."
+      },
+      "Error": {
+        "title": "Login Failed",
+        "default": "Internal Server Error",
+        "400": "The email address provided is invalid. Please check and try again.",
+        "401": "Invalid credentials. Please check and try again.",
+        "403": "Your account is not verified. Please verify your email.",
+        "404": "The email address provided is invalid. Please check and try again.",
+        "409": "This email is linked to an OAuth account and cannot be logged in manually.",
+        "500": "An error occurred while processing your request. Please try again later."
+      },
+      "newAccount": "Don't have an account?",
+      "Remember": "Remember me",
+      "Forgot": "Forgot your password?",
+      "btn": {
+        "label": "Login",
+        "loading": "Logging in..."
+      }
+    },
+    "Register": {
+      "label": "Register",
+      "title": "Create a new account",
+      "description": "Enter your email below to create a new account",
+      "Success": {
+        "title": "Account Created Successfully",
+        "description": "Verification Email has been sent to your email. Please click your email to verify your account."
+      },
+      "Error": {
+        "title": "Account Creation Failed",
+        "default": "Internal Server Error",
+        "400": "The email address provided is invalid. Please check and try again.",
+        "401": "This email is linked to an OAuth account and cannot be registered manually.",
+        "403": "The email address provided is already associated with an account. Please login or reset your password.",
+        "409": "This email is already associated with an account. Please login or reset your password.",
+        "500": "An error occurred while processing your request. Please try again later."
+      },
+      "already": "Already have an account?",
+      "btn": {
+        "label": "Create an account",
+        "loading": "Creating account..."
+      }
+    },
+    "Name": {
+      "label": "Name",
+      "placeholder": "Enter your name",
+      "required": "Name is required"
+    },
+    "Email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "error": "Please enter a valid email address",
+      "required": "Email is required"
+    },
+    "Password": {
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "required": "Password is required",
+      "requirements": {
+        "minLength": "At least 8 characters",
+        "number": "At least one number",
+        "lowercase": "At least one lowercase letter",
+        "uppercase": "At least one uppercase letter"
+      },
+      "strength": {
+        "0": "Enter a password",
+        "1": "Very weak password",
+        "2": "Weak password",
+        "3": "Medium password",
+        "4": "Strong password"
+      },
+      "error": "Please enter a valid password"
+    },
+    "Error": {
+      "title": "Something Went Wrong",
+      "subtitle": "We encountered an error while processing your request.",
+      "description": "An unexpected error occurred. Please try again later.",
+      "btn1": "Return to Home",
+      "btn2": "Go to Login"
+    },
+    "Continue": "or continue with",
+    "privacy": "By selecting this you agree to our [Privacy Policy](/resources/privacy) and [Terms and Conditions](/resources/terms)."
+  },
+
+  "Home": {
+    "Hero": {
+      "subtitle": "Explore tech tutorials and insights",
+      "title": "The Future of Learning",
+      "description": "Unlock smarter, faster content creation and elevate your tech expertise seamlessly"
+    }
+  },
+  "navLinks": {
+    "home": "Home",
+    "trending": "Trending",
+    "community": "Community",
+    "resources": "Resources",
+    "contact": "Contact",
+    "topics": "Topics",
+    "faqs": "FAQs",
+    "advertise": "Advertise With Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "support": "Support",
+    "explore": "Explore"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's talk about everything",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Your email"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "How can we help?"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell us about your inquiry"
+    },
+    "success": "Message sent successfully.",
+    "error": "There was an error sending your message. Please try again later.",
+    "privacy": "By selecting this you agree to our [Privacy Policy](/resources/privacy) and [Terms and Conditions](/resources/terms).",
+    "btn": {
+      "label": "Send Message",
+      "loading": "Sending..."
+    }
+  },
+  "viewAll": "View All",
+  "joinNow": "Join Now",
+  "learnMore": "Learn More",
+
+  "Trending": {
+    "Featured": {
+      "title": "Featured Blogs",
+      "subtitle": "Top Picks for You"
+    },
+    "Latest": {
+      "title": "Latest Blogs",
+      "subtitle": "Most Recent Blogs"
+    }
+  },
+  "Community": {
+    "Feature": {
+      "title": "Why Join Our Community?",
+      "expert": {
+        "title": "Learn from Experts",
+        "description": "Access exclusive tutorials, workshops, and mentorship opportunities from industry leaders."
+      },
+      "build": {
+        "title": "Build Together",
+        "description": "Collaborate on projects, share feedback, and grow your skills with fellow makers."
+      },
+      "update": {
+        "title": "Stay Updated",
+        "description": "Get the latest insights on technology trends, best practices, and innovation."
+      },
+      "network": {
+        "title": "Grow Your Network",
+        "description": "Connect with like-minded individuals and expand your professional network."
+      }
+    },
+    "CTA": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Your support enables us to maintain and improve our platform, create more valuable content, and build new features that enhance your experience. Every contribution, big or small, makes a difference in our mission to empower makers worldwide.",
+      "joinCommunity": "Join Community",
+      "supportUs": "Support Us"
+    }
+  },
+  "Resources": {
+    "title": "Your Gateway to Assistance",
+    "subtitle": "Unlock Your Potential",
+    "description": "Explore guides, tutorials, policies, and more to make the most out of our platform.",
+    "price": {
+      "title": "Pricing",
+      "description": "Explore the different pricing plans and choose the one that best suits your needs."
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "description": "Review the terms and conditions that govern the use of our platform and services."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Understand how we collect, use, and protect your personal data in accordance with privacy laws."
+    },
+    "faqs": {
+      "title": "FAQs",
+      "description": "Find answers to commonly asked questions about our platform, features, and policies."
+    },
+    "support": {
+      "title": "Support Us",
+      "description": "Learn how you can support our platform through donations, partnerships, or other means."
+    },
+    "advertise": {
+      "title": "Advertise",
+      "description": "Discover opportunities to advertise your brand or business on our platform."
+    }
+  },
+  "Pricing": {
+    "title": "Empower Your Blog with Advanced Features",
+    "subtitle": "Perfect Recipe for Your Blog",
+    "description": "Take your blogging to the next level with cutting-edge features designed to save time and improve quality.",
+    "ai": {
+      "title": "AI Content Suggestions",
+      "description": "Leverage advanced AI to get intelligent content suggestions tailored to your niche and audience."
+    },
+    "seo": {
+      "title": "Advanced SEO Optimization",
+      "description": "Boost your blog's visibility with built-in tools for optimizing keywords, metadata, and structure."
+    },
+    "images": {
+      "title": "Unlimited Image Generation",
+      "description": "Generate stunning visuals for your blog with AI-powered image creation tools."
+    },
+    "users": {
+      "title": "Multiple User Access",
+      "description": "Collaborate with your team seamlessly with multi-user access and shared editing tools."
+    },
+    "analytics": {
+      "title": "Custom Analytics Dashboard",
+      "description": "Track your blog's performance with detailed and customizable analytics dashboards."
+    },
+    "templates": {
+      "title": "Customizable Templates",
+      "description": "Choose from a wide variety of templates and customize them to match your brand identity."
+    },
+    "priority": {
+      "title": "24/7 Priority Support",
+      "description": "Get round-the-clock support from our dedicated team to resolve any issues promptly."
+    },
+    "grammar": {
+      "title": "Comprehensive Grammar Check",
+      "description": "Ensure error-free content with an advanced grammar and style checker integrated into the platform."
+    }
+  },
+  "Newsletter": {
+    "title": "Newsletter",
+    "description": "Stay updated with the latest tech tutorials, insights, and industry news.",
+    "placeholder": "Enter your email address"
+  },
+  "Advertise": {
+    "Feature": {
+      "title": "Why Advertise With Us?",
+      "audience": {
+        "title": "Targeted Tech Audience",
+        "description": "Reach developers, IT professionals, and tech enthusiasts directly interested in your products."
+      },
+      "engagement": {
+        "title": "High Engagement Rates",
+        "description": "Benefit from our highly engaged readership, resulting in better conversion rates for your ads."
+      },
+      "content": {
+        "title": "Custom Content Integration",
+        "description": "Seamlessly integrate your brand message with our high-quality tech content for maximum impact."
+      },
+      "analytics": {
+        "title": "Detailed Analytics",
+        "description": "Get comprehensive reports on ad performance, user engagement, and ROI metrics."
+      },
+      "ad": {
+        "title": "Flexible Ad Formats",
+        "description": "Choose from a variety of ad formats including banner ads, sponsored posts, and newsletter features."
+      },
+      "brand": {
+        "title": "Brand Safety",
+        "description": "Rest assured your ads appear alongside curated, high-quality tech content in a brand-safe environment."
+      },
+      "subscriber": {
+        "title": "Large Subscriber Base",
+        "description": "Tap into our extensive subscriber network of tech professionals and decision-makers."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Work with our experienced team to create and optimize your advertising campaigns for best results."
+      }
+    },
+    "CTA": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Reach a targeted audience of tech enthusiasts and developers. Showcase your products and services on the leading technology blog.",
+      "btn": "Get Started"
+    }
+  },
+  "Terms": {
+    "title": "Terms & Conditions",
+    "date": "Last Updated: December 25, 2024",
+    "content": "## General Terms\n\n### Use of Our Service\nBy accessing and placing an order with Bitlog, you confirm your agreement to our policies. We are not liable for any indirect damages arising from your use or inability to use our site. We may change prices and policies at any time and will notify you of significant changes through email or our platform.\n\n### Content Ownership\nAll content stored and displayed on our website belongs to Bitlog. If you believe any content infringes your copyright or is pirated, please contact us. Upon verification, we will remove the infringing content within 3 to 6 months.\n\n## User Account\n\n### Account Responsibility\nFor some services, an account is required. Keep your account details confidential. Providing false information may lead to account termination.\n\n## Products and Services\n\n### Digital Product Delivery\nAll our products are 100% digital and delivered electronically. They can be accessed on your account page. We are not responsible for delays outside our control. If technology issues prevent access, you will find your purchases on the account page.\n\n### Order Cancellation\nWe may cancel orders at any time for any reason. If this happens, we will notify you and issue a refund.\n\n## Third-Party Links\n\n### External Sites\nOur website may include links to third-party sites. We are not responsible for their content or practices. Please review their terms and conditions.\n\n## Product Availability and Errors\n\n### Information Accuracy\nWe strive to provide up-to-date information about our 100% digital products, but errors in pricing and availability may occur. We reserve the right to correct any errors without liability.\n\n## Data Rights\n\n### Data Modification and Deletion\nFor details on how we handle data modification, deletion, and protect your privacy, please refer to our [Privacy Policy](/resources/privacy).\n\n## Changes to Terms\n\n### Liability Cap\nWe are not liable for data loss, lost profits, or any damages arising from the use of our site.\n\n## Governing Law and Jurisdiction\n\n### Legal Framework\nThese terms are governed by applicable federal laws and regulations. Any disputes arising from or relating to the terms shall be subject to the exclusive jurisdiction of the competent courts as determined by applicable law.\n\n## Contact Information\n\n### Queries\nIf you have questions about these terms or the handling of content on our site, please contact us via chat from our website. For concerns regarding copyright infringement, please contact us. Upon verification, we will take appropriate steps to remove such content within 3 to 6 months.\n\n*All the points listed here are yet to be fully achieved, but we are diligently working towards realizing them to the best of our abilities. This is a bootstrap project passionately run by developer [Anuj Joshi](https://anujjoshi.netlify.app), reflecting our vision of continuous improvement and innovation. We sincerely apologize for any inaccuracies or errors that may be present and encourage your [feedback](/contact) to help us correct and refine our efforts. If you wish to contribute, share suggestions, or [contact us](/contact), please don't hesitate to reach out. Together, we can build something remarkable.*",
+    "btn": "Return to Home"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "date": "Last Updated: December 25, 2024",
+    "content": "## Our Commitment to Your Privacy\n\nAt Bitlog, we deeply value your trust and are dedicated to ensuring that your personal information is handled with the utmost care and transparency. This Privacy Policy details how we collect, use, protect, and share your data while using our platform. By engaging with Bitlog, you agree to the practices described herein.\n\n## Information We Collect\n\n### Personal Data\nThe following types of personal information may be collected:\n- Full name, contact details (email, phone number, address)\n- Demographic data and government-issued identification\n- Financial data, including income, expenses, and credit history\n- Employment and professional details\n- Images, signatures, and voice recordings\n- Responses to surveys and customer feedback\n- Device, browser, and usage information\n- Location data when enabled on our app\n\n### Usage Data\nAutomatically collected data includes:\n- IP addresses and device identifiers\n- Browser types and versions\n- Pages visited, time spent, and interaction logs\n- Error reports and diagnostic data\n\n### Cookies and Tracking\nWe employ cookies and similar technologies to enhance your user experience, track preferences, and analyze platform performance.\n\n## How We Use Your Data\n\nYour data enables us to provide better services, including:\n- Facilitating transactions and maintaining accurate records\n- Enhancing your user experience through customization\n- Ensuring compliance with legal regulations\n- Developing insights through analytics and research\n- Communicating updates, promotions, and support details\n- Conducting risk assessments and identity verification\n- Improving platform security and fraud prevention measures\n\n## Sharing Your Data\n\nWe share your personal data only under these conditions:\n- With your explicit consent\n- To comply with legal obligations or court orders\n- With trusted partners for service enhancement, under NDA\n- To prevent fraud, manage risk, or recover debts\n- During mergers, acquisitions, or similar corporate events\n\n## Data Security and Storage\n\nYour data is stored within India and protected by state-of-the-art security measures, including:\n- Encryption in transit and at rest\n- Role-based access controls and monitoring\n- Regular vulnerability assessments\n- Incident response and recovery protocols\n\nAlthough we prioritize security, no system can be entirely secure. Please safeguard your account credentials to minimize risk.\n\n## Your Rights\n\nUnder applicable laws, you have the right to:\n- Access and request a copy of your personal data\n- Correct inaccuracies or update incomplete information\n- Request data deletion, subject to retention obligations\n- Withdraw consent for specific data uses\n- Request data portability to another provider\n\nFor assistance with these rights, contact us at the details below.\n\n## Contact Us\n\nFor queries or concerns about this policy, reach out to our Compliance Officer:\n\n**Compliance Officer:** Anuj Joshi\n\n**Email:** [anujjoshi3105@gmail.com](mailto:anujjoshi3105@gmail.com)\n\n**Phone:** +1-234-567-8900\n\n*All the points listed here are yet to be fully achieved, but we are diligently working towards realizing them to the best of our abilities. This is a bootstrap project passionately run by developer [Anuj Joshi](https://anujjoshi.netlify.app), reflecting our vision of continuous improvement and innovation. We sincerely apologize for any inaccuracies or errors that may be present and encourage your [feedback](/contact) to help us correct and refine our efforts. If you wish to contribute, share suggestions, or [contact us](/contact), please don't hesitate to reach out. Together, we can build something remarkable.*",
+    "btn": "Return to Home"
+  },
+  "Cookies": {
+    "Banner": {
+      "description": "We use our own cookies as well as third-party cookies on our websites to enhance your experience, analyze our traffic, and for security and marketing. Select **Accept All** to allow them to be used. Read our **[Cookie Policy](/resources/cookies)**.",
+      "btn1": "Accept All",
+      "btn2": "Necessary Only"
+    },
+    "title": "Cookie Policy",
+    "date": "Last Updated: December 25, 2024",
+    "content": "At **Bitlog: The Future of Learning**, we value your trust and are committed to maintaining transparency about how we collect, use, and safeguard your information through cookies and similar technologies.\nThis Cookie Policy outlines our practices regarding cookies on our platform.\nBy using our website or services, you consent to the practices described in this policy.\n\n---\n\n## What Are Cookies?\n\nCookies are small text files stored on your device when you visit a website.\nThese files store information about your browsing activity to enhance your experience and provide tailored services.\n\nCookies are categorized as:\n- **First-party cookies:** Set by the website you are visiting.\n- **Third-party cookies:** Set by other websites or services to enable additional functionality, analytics, or advertising.\n\nCookies serve various purposes, including remembering user preferences, improving site functionality, and enabling personalized experiences.\n\n---\n\n## Types of Cookies We Use\n\n### 1. Essential Cookies\nThese cookies are critical for the operation of our platform.\nWithout them, essential features like account login, secure transactions, and navigation cannot function.\n**Examples:** Session management, authentication, and security features.\n\n### 2. Performance and Analytics Cookies\nThese cookies collect data on how users interact with our website.\nThe insights help us optimize website performance and improve user experiences.\n**Examples:** Page loading times, error tracking, and usage analytics.\n\n### 3. Functionality Cookies\nThese cookies enhance usability by remembering your preferences, such as language settings, theme choices, or previously selected options.\n**Examples:** Remembering login details, saved preferences.\n\n### 4. Advertising and Targeting Cookies\nThese cookies help us deliver relevant advertisements based on your interests and measure the effectiveness of our marketing campaigns.\n**Examples:** Personalized ads, retargeting campaigns, and conversion tracking.\n\n### 5. Third-Party Cookies\nWe partner with trusted third parties for additional services such as analytics and advertising.\nThese cookies enable features like video embeds or social sharing.\n**Examples:** Cookies from Google Analytics, YouTube, and Facebook.\n\n---\n\n## How We Use Cookies\n\nWe use cookies to:\n- Ensure the secure and smooth operation of our platform.\n- Analyze user behavior to improve website design and content.\n- Personalize content and services based on user preferences.\n- Provide targeted advertising and promotional messages.\n- Conduct research to better understand our audience.\n\n---\n\n## Managing Your Cookie Preferences\n\nYou have control over how cookies are used.\nUpon visiting our website, you can manage your preferences via our **Cookie Consent Manager**, displayed in the cookie banner.\n\n### Browser Settings\nMost browsers allow you to manage cookies through their settings.\nBelow are links to manage cookies on popular browsers:\n- [Google Chrome](https://support.google.com/chrome/answer/95647)\n- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences)\n- [Safari](https://support.apple.com/en-us/guide/safari/sfri11471/mac)\n- [Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)\n\n**Note:** Disabling some cookies may affect the functionality and user experience of our platform.\n\n---\n\n## Other Tracking Technologies\n\nIn addition to cookies, we use other technologies such as **web beacons**, **pixels**, and **tags** to track user behavior, understand email engagement, and enhance platform performance.\nThese technologies rely on cookies to function and may be disabled by rejecting cookies.\n\n---\n\n## Third-Party Cookies and Services\n\nWe collaborate with third-party providers to improve our services.\nThese include:\n- **Google Analytics:** Tracks website traffic and user behavior ([Learn More](https://support.google.com/analytics/answer/6004245)).\n- **Google Ads:** Delivers personalized advertisements ([Learn More](https://support.google.com/google-ads/answer/2407785)).\n- **Social Media Platforms:** Enable content sharing and engagement tracking (e.g., Facebook, Twitter).\n\nThese providers may use their own cookies under their respective privacy policies.\n\n---\n\n## Data Security and Retention\n\nCookies and associated data are stored securely and retained for as long as necessary to fulfill their intended purposes.\nWe employ encryption, access controls, and regular security audits to protect your data.\nWhile we strive to ensure security, no system is entirely foolproof.\n\n---\n\n## Updates to This Cookie Policy\n\nThis policy may be updated periodically to reflect changes in technologies, legal requirements, or our practices.\nWe encourage you to review this page regularly for the latest updates.\n\n---\n\n## Contact Us\n\nIf you have questions or concerns about our use of cookies, please contact us:\n\n**Compliance Officer:** Anuj Joshi\n\n**Email:** [anujjoshi3105@gmail.com](mailto:anujjoshi3105@gmail.com)\n\n**Phone:** +1-234-567-8900\n\n**Address:** New Delhi, India\n\n*We value your trust and are committed to building a secure, user-friendly platform for lifelong learning.\nYour feedback and suggestions are always welcome as we strive to enhance our services.*\n\n---",
+    "btn": "Return to Home"
+  },
+  "Support": {
+    "title": "Why Support Us?",
+    "description": "Your support enables us to maintain and improve Bitlog, create more valuable content, and build new features that enhance your blogging experience. Every contribution, big or small, makes a difference in our mission to empower bloggers worldwide.",
+    "btn": "Support Us"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Explore Commonly Asked Questions",
+    "1": {
+      "question": "What is Bitlog?",
+      "answer": "Bitlog is a platform where you can discover the latest in tech tutorials and insights. It helps you enhance your skills and stay ahead in the tech world by providing valuable content and tools."
+    },
+    "2": {
+      "question": "What is the AI Blog Generator?",
+      "answer": "The AI Blog Generator is a powerful tool that assists in creating high-quality blog content. It offers features like AI content suggestions, SEO optimization, image generation, grammar checks, and more."
+    },
+    "3": {
+      "question": "What are the available plans for the AI Blog Generator?",
+      "answer": "The AI Blog Generator offers three plans: Basic ($29/month), Pro ($99/month), and Enterprise ($299/month). Each plan provides varying levels of features and support to suit individual users, professionals, and enterprises."
+    },
+    "4": {
+      "question": "Who should choose the Basic plan?",
+      "answer": "The Basic plan is perfect for beginners looking to start their AI blogging journey with essential tools such as AI content suggestions, basic SEO, and limited image generation."
+    },
+    "5": {
+      "question": "What makes the Pro plan popular?",
+      "answer": "The Pro plan is designed for professionals and growing teams, offering advanced features like multiple user access, advanced SEO optimization, unlimited image generation, and team collaboration tools."
+    },
+    "6": {
+      "question": "What does the Enterprise plan offer?",
+      "answer": "The Enterprise plan is tailored for organizations, providing unlimited user access, a custom analytics dashboard, and 24/7 priority support. It's perfect for large teams and enterprises."
+    },
+    "7": {
+      "question": "Is there a free trial available?",
+      "answer": "Yes, the Basic plan includes a free trial so you can explore its features before committing to a subscription."
+    },
+    "8": {
+      "question": "Can I switch plans later?",
+      "answer": "Absolutely! You can upgrade or downgrade your plan at any time to suit your needs. Contact support or manage your subscription through your account."
+    },
+    "9": {
+      "question": "Does the AI Blog Generator support team collaboration?",
+      "answer": "Yes, team collaboration tools are included in the Pro and Enterprise plans, making it easy to work with multiple users on your projects."
+    },
+    "10": {
+      "question": "How can I contact support for the AI Blog Generator?",
+      "answer": "For support, you can reach out via our contact page. Enterprise users have access to 24/7 priority support for immediate assistance."
+    }
+  },
+  "Quotes": {
+    "1": {
+      "author": "Linus Torvalds",
+      "quote": "Talk is cheap. Show me the code."
+    },
+    "2": {
+      "author": "Harold Abelson",
+      "quote": "Programs must be written for people to read, and only incidentally for machines to execute."
+    },
+    "3": {
+      "author": "Grace Hopper",
+      "quote": "The most damaging phrase in the language is: 'It's always been done that way.'"
+    },
+    "4": {
+      "author": "John Johnson",
+      "quote": "First, solve the problem. Then, write the code."
+    },
+    "5": {
+      "author": "Martin Fowler",
+      "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+    },
+    "6": {
+      "author": "Donald Knuth",
+      "quote": "Premature optimization is the root of all evil."
+    },
+    "7": {
+      "author": "Bjarne Stroustrup",
+      "quote": "There are only two kinds of programming languages: the ones people complain about and the ones nobody uses."
+    },
+    "8": {
+      "author": "Alan Turing",
+      "quote": "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human."
+    },
+    "9": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "Simplicity is prerequisite for reliability."
+    },
+    "10": {
+      "author": "Ken Thompson",
+      "quote": "When in doubt, use brute force."
+    },
+    "11": {
+      "author": "Dennis Ritchie",
+      "quote": "Unix is simple. It just takes a genius to understand its simplicity."
+    },
+    "12": {
+      "author": "Steve Jobs",
+      "quote": "Innovation is the ability to see change as an opportunity – not a threat."
+    },
+    "13": {
+      "author": "Bill Gates",
+      "quote": "Your most unhappy customers are your greatest source of learning."
+    },
+    "14": {
+      "author": "Tim Berners-Lee",
+      "quote": "We need diversity of thought in the world to face the new challenges."
+    },
+    "15": {
+      "author": "Brian Kernighan",
+      "quote": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."
+    },
+    "16": {
+      "author": "Guido van Rossum",
+      "quote": "Code is read much more often than it is written."
+    },
+    "17": {
+      "author": "Paul Graham",
+      "quote": "The most important quality in a programmer is the ability to deal with ambiguity."
+    },
+    "18": {
+      "author": "Alan Perlis",
+      "quote": "A language that doesn't affect the way you think about programming is not worth knowing."
+    },
+    "19": {
+      "author": "Douglas Crockford",
+      "quote": "JavaScript is the world's most misunderstood programming language."
+    },
+    "20": {
+      "author": "Jeff Atwood",
+      "quote": "Code never lies, comments sometimes do."
+    },
+    "21": {
+      "author": "David Wheeler",
+      "quote": "Any problem in computer science can be solved with another layer of indirection."
+    },
+    "22": {
+      "author": "Richard Stallman",
+      "quote": "Free software is a matter of liberty, not price."
+    },
+    "23": {
+      "author": "Ada Lovelace",
+      "quote": "The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value."
+    },
+    "24": {
+      "author": "Margaret Hamilton",
+      "quote": "I began to use the term 'software engineering' to distinguish it from hardware and other kinds of engineering."
+    },
+    "25": {
+      "author": "Elon Musk",
+      "quote": "I think it is possible for ordinary people to choose to be extraordinary."
+    },
+    "26": {
+      "author": "Donald Knuth",
+      "quote": "The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly."
+    },
+    "27": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim."
+    },
+    "28": {
+      "author": "Larry Page",
+      "quote": "Always deliver more than expected."
+    },
+    "29": {
+      "author": "Linus Torvalds",
+      "quote": "Intelligence is the ability to avoid doing work, yet getting the work done."
+    },
+    "30": {
+      "author": "Yukihiro Matsumoto",
+      "quote": "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language."
+    },
+    "31": {
+      "author": "Grace Hopper",
+      "quote": "A ship in port is safe, but that is not what ships are built for. Sail out to sea and do new things."
+    },
+    "32": {
+      "author": "Mark Zuckerberg",
+      "quote": "The biggest risk is not taking any risk."
+    },
+    "33": {
+      "author": "Sundar Pichai",
+      "quote": "Wear your failure as a badge of honor."
+    },
+    "34": {
+      "author": "Phil Karlton",
+      "quote": "There are only two hard things in Computer Science: cache invalidation and naming things."
+    },
+    "35": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "Testing shows the presence, not the absence of bugs."
+    },
+    "36": {
+      "author": "Steve Jobs",
+      "quote": "Stay hungry, stay foolish."
+    },
+    "37": {
+      "author": "Dennis Ritchie",
+      "quote": "C is quirky, flawed, and an enormous success."
+    },
+    "38": {
+      "author": "Guido van Rossum",
+      "quote": "Python is an experiment in how much freedom programmers need. Too much freedom and nobody can read another's code; too little and expressiveness is endangered."
+    },
+    "39": {
+      "author": "Larry Wall",
+      "quote": "The three chief virtues of a programmer are: Laziness, Impatience, and Hubris."
+    },
+    "40": {
+      "author": "Donald Knuth",
+      "quote": "Science is what we understand well enough to explain to a computer. Art is everything else we do."
+    },
+    "41": {
+      "author": "Richard Stallman",
+      "quote": "Control over the use of one's ideas really constitutes control over other people's lives; and it is usually used to make their lives more difficult."
+    },
+    "42": {
+      "author": "Alan Kay",
+      "quote": "The best way to predict the future is to invent it."
+    },
+    "43": {
+      "author": "Bjarne Stroustrup",
+      "quote": "I would encourage non-programmers to learn the basics of programming because it teaches you how to think."
+    },
+    "44": {
+      "author": "Douglas Engelbart",
+      "quote": "The rate at which a person can mature is directly proportional to the embarrassment he can tolerate."
+    },
+    "45": {
+      "author": "Robert C. Martin",
+      "quote": "Clean code always looks like it was written by someone who cares."
+    },
+    "46": {
+      "author": "Ken Thompson",
+      "quote": "One of my most productive days was throwing away 1,000 lines of code."
+    },
+    "47": {
+      "author": "Bill Gates",
+      "quote": "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it."
+    },
+    "48": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "Computer Science is no more about computers than astronomy is about telescopes."
+    },
+    "49": {
+      "author": "Patrick McKenzie",
+      "quote": "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."
+    },
+    "50": {
+      "author": "Chris Pine",
+      "quote": "Programming isn't about what you know; it's about what you can figure out."
+    },
+    "51": {
+      "author": "Donald Knuth",
+      "quote": "Computers are good at following instructions, but not at reading your mind."
+    },
+    "52": {
+      "author": "Bill Gates",
+      "quote": "Learning to write programs stretches your mind and helps you think better, creates a way of thinking about things that I think is helpful in all domains."
+    },
+    "53": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "Progress is possible only if we train ourselves to think about programs without thinking of them as pieces of executable code."
+    },
+    "54": {
+      "author": "Bill Gates",
+      "quote": "The computer was born to solve problems that did not exist before."
+    },
+    "55": {
+      "author": "Nicholas Negroponte",
+      "quote": "Computing is not about computers any more. It is about living."
+    },
+    "56": {
+      "author": "Dave Barry",
+      "quote": "The Internet is the most important single development in the history of human communication since the invention of call waiting."
+    },
+    "57": {
+      "author": "Brian W. Kernighan",
+      "quote": "Bad code can be cleaned up. Bad design will forever haunt you."
+    },
+    "58": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "If debugging is the process of removing software bugs, then programming must be the process of putting them in."
+    },
+    "59": {
+      "author": "Alan Kay",
+      "quote": "Simple things should be simple, complex things should be possible."
+    },
+    "60": {
+      "author": "Steve Wozniak",
+      "quote": "Never trust a computer you can't throw out a window."
+    },
+    "61": {
+      "author": "Turing Award Lecture",
+      "quote": "No programming language is perfect. There is not even a single best language; there are only languages well suited or perhaps poorly suited for particular purposes."
+    },
+    "62": {
+      "author": "Hadi Partovi",
+      "quote": "Code teaches you to think. It's a skill that every student should learn."
+    },
+    "63": {
+      "author": "Steve Jobs",
+      "quote": "Creativity is just connecting things."
+    },
+    "64": {
+      "author": "Margaret Hamilton",
+      "quote": "The discipline of software engineering requires continuous learning and improvement."
+    },
+    "65": {
+      "author": "Linus Torvalds",
+      "quote": "In real open source, you have the right to control your own destiny."
+    },
+    "66": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "The tools we use have a profound and devious influence on our thinking habits, and, therefore, on our thinking abilities."
+    },
+    "67": {
+      "author": "Alan Perlis",
+      "quote": "One man's constant is another man's variable."
+    },
+    "68": {
+      "author": "John Ousterhout",
+      "quote": "A program is like a poem; you cannot write a poem without knowing the language, but no amount of knowledge of the language will help you write the poem."
+    },
+    "69": {
+      "author": "Fred Brooks",
+      "quote": "The hardest single part of building a software system is deciding precisely what to build."
+    },
+    "70": {
+      "author": "Grace Hopper",
+      "quote": "You manage things; you lead people."
+    },
+    "71": {
+      "author": "Ken Arnold",
+      "quote": "Unix was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things."
+    },
+    "72": {
+      "author": "Alan Turing",
+      "quote": "If a machine is expected to be infallible, it cannot also be intelligent."
+    },
+    "73": {
+      "author": "Dennis Ritchie",
+      "quote": "The only way to learn a new programming language is by writing programs in it."
+    },
+    "74": {
+      "author": "Ada Lovelace",
+      "quote": "That brain of mine is something more than merely mortal, as time will show."
+    },
+    "75": {
+      "author": "Linus Torvalds",
+      "quote": "Only wimps use tape backups: real men just upload their important stuff on FTP, and let the rest of the world mirror it."
+    },
+    "76": {
+      "author": "Paul Graham",
+      "quote": "Writing software is like designing a recipe, but for a digital chef."
+    },
+    "77": {
+      "author": "Richard Stallman",
+      "quote": "Think of free software as free speech, not free beer."
+    },
+    "78": {
+      "author": "Tim Berners-Lee",
+      "quote": "The Web does not just connect machines, it connects people."
+    },
+    "79": {
+      "author": "Douglas Crockford",
+      "quote": "The main thing is to keep the main thing the main thing."
+    },
+    "80": {
+      "author": "Donald Knuth",
+      "quote": "I don't make mistakes. I make debugging features."
+    },
+    "81": {
+      "author": "Phil Karlton",
+      "quote": "Abstraction is ever-present."
+    },
+    "82": {
+      "author": "Bjarne Stroustrup",
+      "quote": "C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows your whole leg off."
+    },
+    "83": {
+      "author": "Fred Brooks",
+      "quote": "Adding people to a late software project makes it later."
+    },
+    "84": {
+      "author": "Ken Thompson",
+      "quote": "You can't trust code that you did not totally create yourself."
+    },
+    "85": {
+      "author": "Alan Turing",
+      "quote": "Sometimes it is the people no one can imagine anything of who do the things no one can imagine."
+    },
+    "86": {
+      "author": "Martin Fowler",
+      "quote": "Refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior."
+    },
+    "87": {
+      "author": "Elon Musk",
+      "quote": "When something is important enough, you do it even if the odds are not in your favor."
+    },
+    "88": {
+      "author": "Steve Wozniak",
+      "quote": "Wherever smart people work, doors are unlocked."
+    },
+    "89": {
+      "author": "Brian Kernighan",
+      "quote": "Controlling complexity is the essence of computer programming."
+    },
+    "90": {
+      "author": "Marissa Mayer",
+      "quote": "When you need to innovate, you need collaboration."
+    },
+    "91": {
+      "author": "Douglas Engelbart",
+      "quote": "The better we get at getting better, the faster we will get better."
+    },
+    "92": {
+      "author": "Rob Pike",
+      "quote": "Simplicity is the key to brilliance."
+    },
+    "93": {
+      "author": "James Gosling",
+      "quote": "The real power of Java lies not in its simplicity, but in its robustness."
+    },
+    "94": {
+      "author": "Dennis Ritchie",
+      "quote": "I think programming is really just about thinking."
+    },
+    "95": {
+      "author": "Alan Perlis",
+      "quote": "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it."
+    },
+    "96": {
+      "author": "Edwin Land",
+      "quote": "An essential aspect of creativity is not being afraid to fail."
+    },
+    "97": {
+      "author": "Jeff Bezos",
+      "quote": "Invention requires a long-term willingness to be misunderstood."
+    },
+    "98": {
+      "author": "Margaret Hamilton",
+      "quote": "The best software engineers are not just problem solvers, they are also problem finders."
+    },
+    "99": {
+      "author": "Yukihiro Matsumoto",
+      "quote": "I wanted to create a language that made programming fun again."
+    },
+    "100": {
+      "author": "Bill Gates",
+      "quote": "Software is a great combination of artistry and engineering."
+    },
+    "101": {
+      "author": "Vinton Cerf",
+      "quote": "The Internet is a reflection of our society, and that mirror is going to be reflecting what we see."
+    },
+    "102": {
+      "author": "Linus Torvalds",
+      "quote": "Software is like sex: it's better when it's free."
+    },
+    "103": {
+      "author": "Michael Feathers",
+      "quote": "Legacy code is code without tests."
+    },
+    "104": {
+      "author": "Tim Berners-Lee",
+      "quote": "The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."
+    },
+    "105": {
+      "author": "Brian Kernighan",
+      "quote": "UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity."
+    },
+    "106": {
+      "author": "Tony Hoare",
+      "quote": "There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. The other way is to make it so complicated that there are no obvious deficiencies."
+    },
+    "107": {
+      "author": "Albert Einstein",
+      "quote": "Any fool can know. The point is to understand."
+    },
+    "108": {
+      "author": "Eliezer Yudkowsky",
+      "quote": "By far the greatest danger of Artificial Intelligence is that people conclude too early that they understand it."
+    },
+    "109": {
+      "author": "Edsger W. Dijkstra",
+      "quote": "The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise."
+    }
+  }
+}

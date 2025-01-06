@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { formatDate } from "@/utils/formatDate";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 interface BlogCardProps {
@@ -45,7 +45,7 @@ export default function BlogCard({
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover transition-transform duration-300 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
           <div className="absolute bottom-1 left-2 line-clamp-1">
             {blog.tags.map((tag) => (
               <Badge
@@ -64,7 +64,7 @@ export default function BlogCard({
           )}>
           <div>
             <CardHeader>
-              <CardTitle className="line-clamp-2 group-hover:text-primary transition-colors">
+              <CardTitle className="line-clamp-2 transition-colors">
                 {blog.title}
               </CardTitle>
             </CardHeader>

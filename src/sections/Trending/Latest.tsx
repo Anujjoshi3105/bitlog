@@ -3,13 +3,16 @@ import { Button } from "@/components/ui/button";
 import BlogCard from "@/components/BlogCard";
 import blogs from "@/data/blogs.json";
 import tags from "@/data/tags.json";
-import Link from "next/link";
-
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 export default function Latest() {
+  const t = useTranslations();
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold">Latest Blogs</h1>
-      <h3 className="text-muted-foreground mb-6 italic">Most Recent Blogs</h3>
+      <h1 className="text-3xl font-bold">{t("Trending.Latest.title")}</h1>
+      <h3 className="text-muted-foreground mb-6 italic">
+        {t("Trending.Latest.subtitle")}
+      </h3>
       <div className="grid lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2 space-y-6">
           <div className="grid">
@@ -30,7 +33,7 @@ export default function Latest() {
                 ))
             )}
             <Button asChild className="mt-6">
-              <Link href="/blog">View All</Link>
+              <Link href="/blog">{t("viewAll")}</Link>
             </Button>
           </div>
         </div>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  display: inline-block;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.4px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--primary));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after,
+.link:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.photo {
+  transform-style: preserve-3d;
+}
+
+.photo:hover {
+  transform: perspective(800px) rotateY(-180deg);
+}
+
+.bottom-photo {
+  transform: perspective(800px) translateZ(-1px) scaleX(-1);
+}
+
+.fig {
+  transform: perspective(800px) translateZ(30px);
+}
+
+.out {
+  outline-color: hsl(var(--muted));
+  backdrop-filter: blur(5px);
+}
+
+@layer base {
+  :root {
+    --background: 215 25% 92%; /* Light neutral */
+    --foreground: 215 30% 15%; /* Improved contrast */
+    --card: 215 20% 95%; /* Subtle tone for distinction */
+    --card-foreground: 215 30% 12%; /* Darker for readability */
+    --popover: 215 20% 94%; /* Slight variation for layers */
+    --popover-foreground: 215 30% 12%; /* Matches card-foreground */
+    --primary: 222 47% 11%; /* Kept as is */
+    --primary-foreground: 215 15% 98%; /* High contrast */
+    --secondary: 215 22% 88%; /* Slightly muted tone */
+    --secondary-foreground: 215 30% 15%; /* Matches primary */
+    --muted: 215 12% 85%; /* Softer gray tone */
+    --muted-foreground: 215 30% 25%; /* Improved visibility */
+    --accent: 215 25% 88%; /* Harmonized with background */
+    --accent-foreground: 215 30% 15%; /* Matches primary */
+    --destructive: 0 70% 50%; /* Softer red for subtlety */
+    --destructive-foreground: 0 10% 98%; /* Improved readability */
+    --border: 215 15% 83%; /* Slightly darker for visibility */
+    --input: 215 15% 83%; /* Matches border */
+    --ring: 215 28% 18%; /* Harmonized with primary */
+
+    /* Chart Colors */
+    --chart-1: 12 65% 55%; /* Softer red */
+    --chart-2: 173 50% 40%; /* Harmonized green */
+    --chart-3: 197 40% 35%; /* Subdued blue */
+    --chart-4: 43 65% 60%; /* Softer yellow-green */
+    --chart-5: 27 75% 65%; /* Balanced orange-yellow */
+
+    /* Sidebar Colors */
+    --sidebar-background: 215 12% 90%; /* Softer sidebar background */
+    --sidebar-foreground: 215 28% 15%; /* Harmonized text */
+    --sidebar-primary: 215 30% 10%; /* Strong primary */
+    --sidebar-primary-foreground: 215 15% 98%; /* High contrast */
+    --sidebar-accent: 215 20% 85%; /* Subtle highlight */
+    --sidebar-accent-foreground: 215 30% 15%; /* Readable text */
+    --sidebar-border: 215 18% 80%; /* Slightly darker border */
+    --sidebar-ring: 215 28% 18%; /* Matches focus ring */
+
+    /* Radius */
+    --radius: 0.5rem; /* Border radius */
+  }
+
+  .dark {
+    --background: 240 10% 3.9%; /* Kept as is */
+    --foreground: 240 15% 20%; /* Softer tone */
+    --card: 240 12% 5%; /* Distinct but subtle */
+    --card-foreground: 0 0% 95%; /* Improved contrast */
+    --popover: 240 12% 5%; /* Matches card */
+    --popover-foreground: 0 0% 95%; /* Matches card-foreground */
+    --primary: 226 70% 88%; /* Kept as is */
+    --primary-foreground: 240 5.9% 10%; /* High contrast */
+    --secondary: 240 5% 20%; /* Harmonized with background */
+    --secondary-foreground: 0 0% 95%; /* Readable text */
+    --muted: 240 5% 15%; /* Softer muted tone */
+    --muted-foreground: 240 10% 60%; /* Improved visibility */
+    --accent: 240 5% 20%; /* Subtle highlight */
+    --accent-foreground: 0 0% 95%; /* Matches secondary */
+    --destructive: 0 62.8% 40%; /* Softer red */
+    --destructive-foreground: 0 0% 95%; /* Readable text */
+    --border: 240 5% 15%; /* Subtle border */
+    --input: 240 5% 15%; /* Matches border */
+    --ring: 240 5% 70%; /* Subtle focus ring */
+
+    /* Chart Colors */
+    --chart-1: 220 60% 45%; /* Softer red */
+    --chart-2: 160 50% 40%; /* Harmonized green */
+    --chart-3: 30 70% 50%; /* Balanced blue */
+    --chart-4: 280 60% 55%; /* Subtle purple */
+    --chart-5: 340 65% 50%; /* Softer magenta */
+
+    /* Sidebar Colors */
+    --sidebar-background: 240 5.9% 10%; /* Kept as is */
+    --sidebar-foreground: 240 7% 85%; /* Softer text */
+    --sidebar-primary: 224.3 70% 45%; /* Stronger primary */
+    --sidebar-primary-foreground: 0 0% 95%; /* High contrast */
+    --sidebar-accent: 240 5% 20%; /* Subtle accent */
+    --sidebar-accent-foreground: 240 7% 85%; /* Readable accent */
+    --sidebar-border: 240 5% 15%; /* Matches input */
+    --sidebar-ring: 217.2 80% 50%; /* Subtle focus ring */
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-secondary text-primary scroll-smooth w-screen overflow-x-hidden font-mont;
+  }
+  main {
+    @apply py-52 px-6 sm:px-12 lg:px-32 mx-auto space-y-24;
+  }
+  ul.bullet {
+    @apply list-none;
+  }
+
+  ul.bullet li {
+    @apply relative;
+  }
+
+  ul.bullet li::before {
+    content: "▹";
+    @apply absolute left-[-20px] top-[6px] leading-[12px];
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background;
+  }
+}

@@ -29,7 +29,7 @@ const cardVariants = {
 
 export default function Prices() {
   return (
-    <section className="mx-auto py-36">
+    <section className="py-24">
       <motion.div
         className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4"
         initial="hidden"

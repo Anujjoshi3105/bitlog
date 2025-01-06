@@ -1,0 +1,26 @@
+{
+  "welcome": {
+    "subject": "Welcome to Bitlog!",
+    "body": "<h1>Welcome to Bitlog!</h1><p>We're thrilled to have you join us. Explore your dashboard, track your logs, and experience the best of Bitlog.</p><p>If you have any questions, feel free to reach out. Let's make great things happen together!</p>"
+  },
+  "verify": {
+    "subject": "Verify Your Email Address",
+    "body": "<h1>Verify Your Email</h1><p>Please verify your email address to activate your Bitlog account:</p><p><a href=\"{{link}}\">Click here to verify your email</a></p><p>If you didn't sign up for Bitlog, please ignore this email.</p>"
+  },
+  "thanks": {
+    "subject": "Thank You for Subscribing to Bitlog!",
+    "body": "<h1>Thank You!</h1><p>We appreciate you subscribing to Bitlog. Stay tuned for updates, new features, and exciting announcements!</p>"
+  },
+  "forgot": {
+    "subject": "Reset Your Bitlog Password",
+    "body": "<h1>Reset Password</h1><p>We received a request to reset your password. Click the link below to reset it:</p><p><a href=\"{{link}}\">Reset Password</a></p><p>If you didn't request this, please ignore this email or contact support.</p>"
+  },
+  "subscribe": {
+    "subject": "Thanks for Subscribing to Bitlog!",
+    "body": "<h1>You're Subscribed!</h1><p>Thank you for subscribing to Bitlog. We’re excited to have you onboard.</p><p>Stay tuned for exclusive updates, tips, and insights to help you get the most out of Bitlog.</p><p>Feel free to explore our platform and let us know if there's anything we can assist you with.</p>"
+  },
+  "contact": {
+    "subject": "Thanks for Contacting Bitlog!",
+    "body": "<h1>Thank You for Reaching Out!</h1><p>We’ve received your message and our team will get back to you as soon as possible.</p><p>If you have additional details to share, feel free to reply to this email. We’re here to help!</p><p>Best regards,<br>The Bitlog Team</p>"
+  }
+}

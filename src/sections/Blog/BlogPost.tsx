@@ -177,10 +177,10 @@ export default function BlogPost({ id }: { id: string }) {
                 <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
               </Avatar>
               <div className="flex flex-col gap-1">
-                <span className="text-sm font-semibold">
+                <span className="text-xs font-semibold">
                   {post.author.name}
                 </span>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span>
                     <div className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
@@ -262,7 +262,7 @@ export default function BlogPost({ id }: { id: string }) {
               </TooltipProvider>
             </div>
           </div>
-          <Markdown className="prose prose-sm sm:prose lg:prose-lg">
+          <Markdown className="prose prose-sm sm:prose">
             {post.content}
           </Markdown>
         </div>

@@ -3,11 +3,13 @@
 import { useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Loader, Search } from "lucide-react";
+import { Loader2, Search } from "lucide-react";
 import Tags from "@/data/tags.json";
 import { Badge } from "@/components/ui/badge";
+import { useTranslations } from "next-intl";
 
 export default function HeroSearch() {
+  const t = useTranslations();
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -40,7 +42,7 @@ export default function HeroSearch() {
         <div className="relative flex-grow">
           <Input
             className="rounded-full pr-10 w-full"
-            placeholder="Search latest tech insights and tutorials..."
+            placeholder={t("Search")}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             aria-label="Search articles"
@@ -51,7 +53,7 @@ export default function HeroSearch() {
             disabled={loading}
             aria-label="Submit search">
             {loading ? (
-              <Loader className="animate-spin h-4 w-4" aria-hidden="true" />
+              <Loader2 className="animate-spin h-4 w-4" aria-hidden="true" />
             ) : (
               <Search className="h-4 w-4" aria-hidden="true" />
             )}
