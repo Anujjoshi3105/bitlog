@@ -5,7 +5,7 @@ import { Link } from "@/i18n/routing";
 
 export default function page() {
   return (
-    <div className="h-full w-screen fixed overflow-y-auto z-[1000] bg-background">
+    <div className="h-full w-screen fixed overflow-y-auto bg-background">
       <div className="grid h-screen lg:grid-cols-2">
         <div className="flex flex-col gap-12 p-6 md:p-10">
           <Link

@@ -5,7 +5,7 @@ import RegisterForm from "@/sections/Auth/RegisterForm";
 
 export default function page() {
   return (
-    <div className="h-full w-screen fixed overflow-y-auto top-0 left-0 z-[1000] bg-background">
+    <div className="h-full w-screen fixed overflow-y-auto top-0 left-0 bg-background">
       <div className="grid h-full lg:grid-cols-2">
         <div className="inline-flex flex-col gap-12 p-6 md:p-10">
           <Link

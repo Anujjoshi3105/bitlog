@@ -11,11 +11,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Loader2, LogOut, Settings, User as UserAvatar } from "lucide-react";
-import { Mode } from "@/components/Mode";
+import { Mode } from "@/components/site/Mode";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { signOut, useSession } from "next-auth/react";
+import { SiteSettings } from "@/components/site/site-settings";
 
 export default function User() {
   const t = useTranslations();
@@ -26,8 +27,7 @@ export default function User() {
     case "unauthenticated":
       return (
         <>
-          <Mode />
-          <LanguageSwitcher />
+          <SiteSettings />
           <Button className="hidden lg:flex rounded-full" asChild>
             <Link href="/auth">{t("joinNow")}</Link>
           </Button>
@@ -39,7 +39,11 @@ export default function User() {
     name = "User",
     email = "email@example.com",
     image = "https://github.com/shadcn.png",
-  } = session.data.user ?? {};
+  } = session.data.user ?? {
+    name: "Guest",
+    email: "guest",
+    image: "https://github.com/shadcn.png",
+  };
   const role = "Member";
 
   return (
@@ -60,8 +64,8 @@ export default function User() {
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <div className="flex gap-2 items-center">
-          <Mode /> <LanguageSwitcher />
+        <div className="flex gap-2 items-center justify-between px-2">
+          <LanguageSwitcher /> <Mode />
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem>

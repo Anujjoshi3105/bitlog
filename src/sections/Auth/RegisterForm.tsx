@@ -3,7 +3,7 @@
 import { Check, Loader2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Link, redirect } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { Password } from "@/components/ui/password";
 import { toast } from "sonner";
 import { useTranslations } from "next-intl";
@@ -63,7 +63,6 @@ export default function RegisterForm({
           description: t("Register.Success.description"),
         });
         form.reset();
-        redirect({ href: "/auth/login", locale: "en" });
       } else {
         form.setError("root", {
           message: t(`Register.Error.${res.statusCode}`),

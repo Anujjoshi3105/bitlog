@@ -15,7 +15,7 @@ export default function NotFound() {
         </p>
       </div>
       <Button asChild>
-        <Link href="/" title="Return Home">
+        <Link href="/" title={t("returnHome")}>
           {t("returnHome")}
         </Link>
       </Button>

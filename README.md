@@ -27,7 +27,7 @@
 ✅ Dark Mode Toggle  
 ✅ English and German Language Support  
 ✅ Interactive User Interface  
-❌ Progressive Web App (PWA) Support  
+✅ Progressive Web App (PWA) Support  
 ❌ Modular Component Architecture  
 ❌ Accessibility (WCAG Standards)  
 ❌ Dark Theme Design  
@@ -122,6 +122,8 @@
 - **AI Tools**: (currently being explored)
 - **Deployment**: Vercel, Docker
 - **Version Control**: Git, GitHub
+
+  ![alt text](public/er.svg)
 
 ## Installation
 

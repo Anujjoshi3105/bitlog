@@ -15,7 +15,7 @@ import OAuth from "@/components/OAuth";
 export default function AuthPage() {
   const t = useTranslations();
   return (
-    <div className="flex justify-center items-center h-full w-screen fixed overflow-y-auto z-[1000] bg-secondary">
+    <div className="flex justify-center items-center h-full w-screen fixed overflow-y-auto bg-secondary">
       <div>
         <Card className="w-[400px] shadow-lg">
           <CardHeader>

@@ -1,8 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import "./globals.css";
-import Header from "@/sections/Header";
-import Footer from "@/sections/Footer/Footer";
+import "@/styles/globals.css";
+import HolyLoader from "holy-loader";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Locale, routing } from "@/i18n/routing";
 import { getLangDir } from "rtl-detect";
@@ -97,13 +96,12 @@ export default async function LocaleLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="relative antialiased">
+        <HolyLoader color="#1b2432" />
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <ThemeProvider attribute="class">
-              <Header />
-              {children}
-              <Footer />
               <Cookies />
+              {children}
               <Toaster richColors />
             </ThemeProvider>
           </Providers>

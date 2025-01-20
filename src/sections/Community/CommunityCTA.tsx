@@ -8,7 +8,7 @@ export default function CommunityCTA() {
   const t = useTranslations("Community.CTA");
   return (
     <section>
-      <Card className="bg-primary/5">
+      <Card className="bg-muted">
         <CardContent className="px-4 py-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t("title")}</h2>
           <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">

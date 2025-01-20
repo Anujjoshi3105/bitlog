@@ -15,6 +15,13 @@
       "when": 1736000873537,
       "tag": "0001_bright_the_fury",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736347560458,
+      "tag": "0002_rapid_may_parker",
+      "breakpoints": true
     }
   ]
 }

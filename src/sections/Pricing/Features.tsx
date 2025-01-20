@@ -51,7 +51,7 @@ export function Features() {
   return (
     <>
       <div className="max-w-2xl mx-auto text-center">
-        <p className="font-semibold leading-7">{t("subtitle")}</p>
+        <p className="font-semibold leading-7 text-primary">{t("subtitle")}</p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           {t("title")}
         </h1>

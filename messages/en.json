@@ -1,7 +1,10 @@
 {
   "Slogan": "The Future of Learning",
+  "error": "Something Went Wrong",
+  "errorMsg": "We're sorry, but an unexpected error occurred while loading the page.",
   "notFound": "Page Not Found",
-  "returnHome": "Return to Home",
+  "returnHome": "Go Back to Home",
+  "tryAgain": "Try Again",
   "LocaleLayout": {
     "title": "Bitlog: The Future of Learning",
     "description": "Bitlog is your go-to platform for exploring in-depth tutorials, expert insights, and real-world tech stories. Empowering developers with knowledge and fostering a vibrant tech community.",
@@ -195,7 +198,7 @@
       "title": "Something Went Wrong",
       "subtitle": "We encountered an error while processing your request.",
       "description": "An unexpected error occurred. Please try again later.",
-      "btn1": "Return to Home",
+      "btn1": "Go Back to Home",
       "btn2": "Go to Login"
     },
     "Continue": "or continue with",

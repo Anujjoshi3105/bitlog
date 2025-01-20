@@ -8,8 +8,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Locale, routing, usePathname, useRouter } from "@/i18n/routing";
+import { getCountryName } from "@/lib/utils";
 import { useParams } from "next/navigation";
 import ReactCountryFlag from "react-country-flag";
+import { toast } from "sonner";
 
 const localeToCountry: { [key: string]: string } = {
   en: "GB",
@@ -34,6 +36,13 @@ export default function LanguageSwitcherSelect({ defaultValue, label }: Props) {
       { pathname, params },
       { locale: nextLocale as Locale }
     );
+    setTimeout(() => {
+      toast.success("Langauge changed successfully", {
+        description: `You have successfully changed your language to ${getCountryName(
+          nextLocale
+        )}`,
+      });
+    }, 500);
   }
 
   return (
@@ -48,7 +57,7 @@ export default function LanguageSwitcherSelect({ defaultValue, label }: Props) {
           <SelectItem key={locale} value={locale}>
             <div className="text-xs flex items-center justify-center gap-2">
               <ReactCountryFlag
-                countryCode={localeToCountry[locale] || "GB"}
+                countryCode={localeToCountry[locale] || "en"}
                 svg
               />
               <span>{locale.toUpperCase()}</span>

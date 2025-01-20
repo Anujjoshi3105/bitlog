@@ -1,4 +1,5 @@
-import NotFound from "@/app/not-found";
-export default function CatchAllPage() {
-  return <NotFound />;
+import ErrorPage from "@/app/error";
+
+export default function rest() {
+  return <ErrorPage />;
 }

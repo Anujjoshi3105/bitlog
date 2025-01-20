@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Password } from "@/components/ui/password";
 import { useForm } from "react-hook-form";
 import { valibotResolver } from "@hookform/resolvers/valibot";
-import { Link, redirect } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import OAuth from "@/components/OAuth";
 import Markdown from "react-markdown";
@@ -45,7 +45,6 @@ export function LoginForm({
           description: t("Login.Success.description"),
         });
         form.reset();
-        redirect({ href: "/dashboard", locale: "en" });
       } else {
         form.setError("root", { message: t(`Login.Error.${res.statusCode}`) });
         toast.error(t("Login.Error.title"), {

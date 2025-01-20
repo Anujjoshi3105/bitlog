@@ -66,8 +66,8 @@ export default function Sidebar() {
   return (
     <aside
       className={cn(
-        "bg-primary/10 relative flex flex-col items-center justify-between h-screen py-6 px-2 md:py-8 md:px-4 border-r transition-all duration-300 ease-in-out",
-        isCollapsed || isMobile ? "w-20" : "w-64"
+        "bg-accent relative flex flex-col items-center justify-between h-screen py-6 px-2 md:py-8 md:px-4 border-r transition-all duration-300 ease-in-out",
+        isCollapsed || isMobile ? "w-16" : "w-64"
       )}>
       <UserInfo isCollapsed={isCollapsed || isMobile} />
       <nav className="space-y-4">
@@ -101,7 +101,7 @@ export default function Sidebar() {
       {!isMobile && (
         <Button
           onClick={toggleSidebar}
-          variant="secondary"
+          variant="outline"
           className="absolute top-1/2 -right-5 rounded-full transition-transform duration-300 ease-in-out transform"
           size="icon"
           aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}>
