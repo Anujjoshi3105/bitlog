@@ -3,7 +3,7 @@ import CommunityFeature from "@/sections/Community/CommunityFeature";
 
 export default function page() {
   return (
-    <main className="space-y-32 max-w-7xl">
+    <main className="space-y-32">
       <CommunityFeature />
       <CommunityCTA />
     </main>

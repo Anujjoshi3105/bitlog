@@ -5,8 +5,13 @@
   "notFound": "Page Not Found",
   "returnHome": "Go Back to Home",
   "tryAgain": "Try Again",
+  "PriceCard": {
+    "subtitle": "Our Pricing Plans",
+    "title": "Discover Flexible Plans",
+    "description": "Unlock advance features for enhanced content and strategy"
+  },
   "LocaleLayout": {
-    "title": "Bitlog: The Future of Learning",
+    "title": "Bitlog - The Future of Learning",
     "description": "Bitlog is your go-to platform for exploring in-depth tutorials, expert insights, and real-world tech stories. Empowering developers with knowledge and fostering a vibrant tech community.",
     "keywords": "Tech Tutorials, Tech Insights, Developer Community, AI, Machine Learning, Quantum Computing, Computer Vision, Technology Archives, Learning Platform, Tech Articles, Innovation, Future of Learning,Programming Guides, Tech News"
   },
@@ -207,9 +212,9 @@
 
   "Home": {
     "Hero": {
-      "subtitle": "Explore tech tutorials and insights",
+      "subtitle": "Discover Expert Insights and Practical Tech Guides",
       "title": "The Future of Learning",
-      "description": "Unlock smarter, faster content creation and elevate your tech expertise seamlessly"
+      "description": "Empower your tech journey with smarter content creation and effortless skill-building."
     }
   },
   "navLinks": {
@@ -270,6 +275,8 @@
   "Community": {
     "Feature": {
       "title": "Why Join Our Community?",
+      "subtitle": "Discover the Benefits",
+      "description": "Grow, connect, and succeed together",
       "expert": {
         "title": "Learn from Experts",
         "description": "Access exclusive tutorials, workshops, and mentorship opportunities from industry leaders."
@@ -324,9 +331,9 @@
     }
   },
   "Pricing": {
-    "title": "Empower Your Blog with Advanced Features",
-    "subtitle": "Perfect Recipe for Your Blog",
-    "description": "Take your blogging to the next level with cutting-edge features designed to save time and improve quality.",
+    "subtitle": "Elevate Your Blog with Advanced Features",
+    "title": "Perfect Recipe for Your Blog",
+    "description": "Unlock powerful features to save time and boost quality",
     "ai": {
       "title": "AI Content Suggestions",
       "description": "Leverage advanced AI to get intelligent content suggestions tailored to your niche and audience."
@@ -367,7 +374,9 @@
   },
   "Advertise": {
     "Feature": {
+      "subtitle": "Expand Your Reach with Us",
       "title": "Why Advertise With Us?",
+      "description": "Connect with your audience and grow your brand effortlessly",
       "audience": {
         "title": "Targeted Tech Audience",
         "description": "Reach developers, IT professionals, and tech enthusiasts directly interested in your products."
@@ -437,7 +446,7 @@
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Explore Commonly Asked Questions",
+    "description": "Explore Commonly Asked Questions",
     "1": {
       "question": "What is Bitlog?",
       "answer": "Bitlog is a platform where you can discover the latest in tech tutorials and insights. It helps you enhance your skills and stay ahead in the tech world by providing valuable content and tools."

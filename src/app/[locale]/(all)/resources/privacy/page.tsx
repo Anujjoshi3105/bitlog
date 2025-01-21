@@ -6,17 +6,16 @@ import Markdown from "react-markdown";
 export default function Page() {
   const t = useTranslations("Privacy");
   return (
-    <main>
-      <div>
-        <h1 className="text-3xl font-bold uppercase my-6 underline underline-offset-8">
+    <main className="text-center">
+      <div className="space-y-6">
+        <h1 className="text-3xl font-bold uppercase underline underline-offset-8">
           {t("title")}
         </h1>
         <p>{t("date")}</p>
-
-        <section className="mt-8 prose w-full">
-          <Markdown>{t("content")}</Markdown>
-        </section>
       </div>
+      <section className="mt-8 prose w-full mx-auto">
+        <Markdown>{t("content")}</Markdown>
+      </section>
       <div className="mt-8 flex justify-center">
         <Button asChild>
           <Link href="/">{t("btn")}</Link>

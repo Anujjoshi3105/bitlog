@@ -1,27 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 export default function Loading() {
   const t = useTranslations();
-  const [progress, setProgress] = useState(0);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
-
-  const updateProgress = useCallback(() => {
-    setProgress((prevProgress) => {
-      if (prevProgress >= 100) {
-        return 100;
-      }
-      return prevProgress + 1;
-    });
-  }, []);
-
-  useEffect(() => {
-    const progressInterval = setInterval(updateProgress, 30);
-    return () => clearInterval(progressInterval);
-  }, [updateProgress]);
 
   useEffect(() => {
     const quoteInterval = setInterval(() => {
@@ -36,11 +21,6 @@ export default function Loading() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
         className="fixed inset-0 z-[1000] flex flex-col justify-center items-center bg-background">
-        <motion.div
-          className="absolute top-0 left-0 h-1 bg-primary"
-          style={{ width: `${progress}%` }}
-          transition={{ type: "spring", stiffness: 50 }}
-        />
         <div className="space-y-2 my-16 text-center">
           <div className="flex items-center justify-center gap-2 text-4xl sm:text-5xl font-extrabold">
             <motion.span

@@ -21,6 +21,8 @@
 
 ## Features
 
+![alt text](public/seo.png)
+
 ### Frontend
 
 ✅ Responsive Design  
@@ -30,7 +32,7 @@
 ✅ Progressive Web App (PWA) Support  
 ❌ Modular Component Architecture  
 ❌ Accessibility (WCAG Standards)  
-❌ Dark Theme Design  
+✅ Dark Theme Design  
 ❌ Multi-language Expansion (French, Spanish, etc.)  
 ❌ Interactive Charts and Graphs  
 ❌ File Upload with Preview  

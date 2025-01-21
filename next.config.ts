@@ -8,7 +8,7 @@ const withNextIntl = createNextIntlPlugin();
 // Base Next.js configuration
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify is no longer needed
 };
 
 // PWA configuration

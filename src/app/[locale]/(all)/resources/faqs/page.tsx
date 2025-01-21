@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useTranslations } from "next-intl";
+import Heading from "@/components/ui/heading";
 
 const animationVariants = {
   hidden: (direction: "left" | "right") => ({
@@ -28,11 +29,8 @@ export default function FAQ() {
   const t = useTranslations("FAQ");
 
   return (
-    <main className="max-w-5xl mx-auto space-y-16">
-      <div className="text-center space-y-2">
-        <h1 className="text-3xl font-bold md:text-4xl">{t("title")}</h1>
-        <h3 className="text-muted-foreground">{t("subtitle")}</h3>
-      </div>
+    <main className="max-w-5xl mx-auto">
+      <Heading title={t("title")} description={t("subtitle")} />
       <Accordion type="single" collapsible className="w-full">
         {Array.from({ length: 10 }, (_, index) => {
           const id = index + 1;

@@ -12,10 +12,13 @@ import {
   Zap,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Heading from "@/components/ui/heading";
+import Grid from "@/components/template/grid";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Page() {
   const t = useTranslations("Advertise");
-  const keys = [
+  const items = [
     { icon: Target, key: "audience" },
     { icon: TrendingUp, key: "engagement" },
     { icon: Zap, key: "content" },
@@ -24,52 +27,45 @@ export default function Page() {
     { icon: Shield, key: "brand" },
     { icon: Users, key: "subscriber" },
     { icon: HeartHandshake, key: "support" },
-  ] as const;
+  ].map(({ key, icon }) => ({
+    key,
+    icon,
+    title: t(`Feature.${key}.title`),
+    description: t(`Feature.${key}.description`),
+  }));
   return (
     <main className="space-y-24 overflow-hidden">
-      {/* Features Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Advertise Features */}
+      <section>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            {t("Feature.title")}
-          </h2>
-          <div className="grid gap-x-8 gap-y-10 lg:grid-cols-3">
-            {keys.map(({ icon: Icon, key }) => (
-              <div key={key} className="relative pl-16">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                  <Icon className="h-6 w-6 text-background" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">
-                  {t(`Feature.${key}.title`)}
-                </h3>
-                <p className="text-muted-foreground">
-                  {t(`Feature.${key}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
+          <Heading
+            title={t("Feature.title")}
+            subtitle={t("Feature.subtitle")}
+            description={t("Feature.description")}
+          />
+          <Grid
+            items={items}
+            variant="inline"
+            columns={2}
+            maxWidth="4xl"
+            className="mx-auto max-w-2xl lg:max-w-4xl"
+          />
         </div>
       </section>
 
-      {/* Hero Section */}
-      <section className="relative px-4 sm:px-6 lg:px-8">
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center space-y-8">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary">
-              <Megaphone className="h-12 w-12 text-background" />
-            </div>
-            <h1 className="text-4xl font-extrabold tracking-tight uppercase">
-              {t("CTA.title")}
-            </h1>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              {t("CTA.description")}
-            </p>
-            <Button size="lg" asChild>
-              <Link href="/contact">{t("CTA.btn")}</Link>
-            </Button>
+      {/* Advertis CTA */}
+      <Card className="max-w-5xl mx-auto">
+        <CardContent className="px-6 py-12 sm:px-12 sm:py-16 text-center max-w-3xl mx-auto">
+          <div className="mx-auto mb-10 flex size-20 items-center justify-center rounded-full bg-primary">
+            <Megaphone className="size-10 text-card" />
           </div>
-        </div>
-      </section>
+          <h2 className="text-3xl sm:text-4xl font-bold">{t("CTA.title")}</h2>
+          <p className="mt-4 mb-8">{t("CTA.description")}</p>
+          <Button size="lg" asChild>
+            <Link href="/contact">{t("CTA.btn")}</Link>
+          </Button>
+        </CardContent>
+      </Card>
     </main>
   );
 }

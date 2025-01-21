@@ -2,11 +2,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import "@/styles/globals.css";
 import HolyLoader from "holy-loader";
-import { ThemeProvider } from "@/providers/theme-provider";
 import { Locale, routing } from "@/i18n/routing";
 import { getLangDir } from "rtl-detect";
 import { Toaster } from "sonner";
-import { Providers } from "@/providers/session-provider";
+import { Providers } from "@/providers/providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Cookies from "@/components/Cookies";
 
@@ -32,7 +31,10 @@ export async function generateMetadata({
       shortcut: "/logo.svg",
       apple: "/logo.svg",
     },
-    title: t("title"),
+    title: {
+      default: t("title"),
+      template: `%s: ${t("title")}`,
+    },
     description: t("description"),
     keywords: [
       "Bitlog",
@@ -82,7 +84,7 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -98,12 +100,11 @@ export default async function LocaleLayout({
       <body className="relative antialiased">
         <HolyLoader color="#1b2432" />
         <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <ThemeProvider attribute="class">
-              <Cookies />
-              {children}
-              <Toaster richColors />
-            </ThemeProvider>
+          <Providers
+            themeProps={{ attribute: "class", defaultTheme: "system" }}>
+            <Cookies />
+            {children}
+            <Toaster richColors />
           </Providers>
         </NextIntlClientProvider>
       </body>

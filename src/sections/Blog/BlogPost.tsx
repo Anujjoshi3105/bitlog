@@ -140,7 +140,7 @@ export default function BlogPost({ id }: { id: string }) {
 
   return (
     <div className="w-full">
-      <header className="bg-primary/10 py-12 h-72 relative">
+      <header className="bg-muted py-12 h-72 relative">
         <div className="container mx-auto p-4 absolute bottom-0 left-1/2 transform -translate-x-1/2">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
             {post.title}
@@ -262,7 +262,7 @@ export default function BlogPost({ id }: { id: string }) {
               </TooltipProvider>
             </div>
           </div>
-          <Markdown className="prose prose-sm sm:prose">
+          <Markdown className="prose prose-sm sm:prose p-0">
             {post.content}
           </Markdown>
         </div>

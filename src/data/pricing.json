@@ -1,10 +1,12 @@
 [
   {
+    "id": "basic",
     "title": "Basic",
-    "popular": false,
-    "price": 0,
     "description": "Start your AI blogging journey with essential tools and features.",
-    "btn": "Start Now",
+    "monthlyPrice": 0,
+    "yearlyPrice": 0,
+    "popular": false,
+    "buttonText": "Start Now",
     "features": [
       { "feature": "AI content suggestions", "available": true },
       { "feature": "Basic SEO optimization", "available": true },
@@ -19,11 +21,13 @@
     ]
   },
   {
-    "title": "Pro",
-    "popular": true,
-    "price": 20,
+    "id": "pro",
+    "title": "Professional",
     "description": "Powerful tools for professional AI bloggers and growing teams.",
-    "btn": "Get Started",
+    "monthlyPrice": 20,
+    "yearlyPrice": 200,
+    "popular": true,
+    "buttonText": "Get Started",
     "features": [
       { "feature": "AI content suggestions", "available": true },
       { "feature": "Advanced SEO optimization", "available": true },
@@ -38,11 +42,13 @@
     ]
   },
   {
+    "id": "enterprise",
     "title": "Enterprise",
-    "popular": false,
-    "price": 50,
     "description": "Comprehensive AI blogging solutions for organizations and enterprises.",
-    "btn": "Contact Us",
+    "monthlyPrice": 50,
+    "yearlyPrice": 500,
+    "popular": false,
+    "buttonText": "Contact Us",
     "features": [
       { "feature": "AI content suggestions", "available": true },
       { "feature": "Advanced SEO optimization", "available": true },

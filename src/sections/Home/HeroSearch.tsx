@@ -38,7 +38,7 @@ export default function HeroSearch() {
 
   return (
     <form onSubmit={handleSearch} className="max-w-sm sm:max-w-xl mx-auto">
-      <div className="flex items-center my-4">
+      <div className="flex items-center mb-4">
         <div className="relative flex-grow">
           <Input
             className="rounded-full pr-10 w-full"

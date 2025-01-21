@@ -11,7 +11,6 @@ export default function Featured({ maxblog = 4 }: { maxblog?: number }) {
   const t = useTranslations("Trending.Featured");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [hasError] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -33,18 +32,10 @@ export default function Featured({ maxblog = 4 }: { maxblog?: number }) {
     );
   };
 
-  if (hasError) {
-    return (
-      <section className="container mx-auto py-8 text-center text-red-500">
-        Error loading featured blog
-      </section>
-    );
-  }
-
   return (
     <div>
       <h1 className="text-3xl font-bold">{t("title")}</h1>
-      <h3 className="text-muted-foreground mb-6 italic">{t("subtitle")}</h3>
+      <h4 className="text-muted-foreground mb-6 mt-1">{t("subtitle")}</h4>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <BlogCard blog={blog[currentIndex]} variant="vertical" />
         <div className="flex flex-col justify-around">

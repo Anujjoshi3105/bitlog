@@ -19,9 +19,8 @@ export default function Newsletter() {
       await userMail("subscribe", email);
       await adminMail(email);
       toast.success("Subscribed successfully.");
-    } catch (error) {
-      console.error(error);
-      alert("Something went wrong. Please try again.");
+    } catch {
+      toast.error("Something went wrong. Please try again.");
     } finally {
       setEmail("");
       setLoading(false);
@@ -29,16 +28,13 @@ export default function Newsletter() {
   };
   return (
     <div>
-      <h5 className="text-lg font-bold uppercase mb-3 text-primary">
-        {t("title")}
-      </h5>
-      <p className="max-w-xs mx-auto md:mx-0">{t("description")}</p>
-
-      <form className="mt-4 flex items-stretch justify-center">
+      <h4 className="text-lg font-bold uppercase">{t("title")}</h4>
+      <p className="max-w-xs mx-auto md:mx-0 mb-4 mt-1">{t("description")}</p>
+      <form className="flex items-stretch justify-center">
         <input
           type="email"
           placeholder={t("placeholder")}
-          className="flex-1 p-3 text-primary bg-muted max-w-sm border-[2px] border-transparent focus:outline-none"
+          className="flex-1 p-3 bg-accent max-w-sm border-[2px] border-transparent"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={loading}
@@ -48,9 +44,9 @@ export default function Newsletter() {
           type="submit"
           onClick={sendEmail}
           disabled={loading}
-          className="p-4 -ml-2 bg-primary text-background flex items-center justify-center active:scale-95 hover:brightness-125">
+          className="p-4 bg-primary text-background active:scale-95">
           {loading ? (
-            <Loader2 className="animate-spin w-4 h-4" />
+            <Loader2 className="animate-spin size-4" />
           ) : (
             <AiOutlineSend />
           )}

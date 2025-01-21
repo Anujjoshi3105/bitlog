@@ -10,9 +10,9 @@ export default function Latest() {
   return (
     <div className="container mx-auto px-4">
       <h1 className="text-3xl font-bold">{t("Trending.Latest.title")}</h1>
-      <h3 className="text-muted-foreground mb-6 italic">
+      <h4 className="text-muted-foreground mb-6 mt-1">
         {t("Trending.Latest.subtitle")}
-      </h3>
+      </h4>
       <div className="grid lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2 space-y-6">
           <div className="grid">

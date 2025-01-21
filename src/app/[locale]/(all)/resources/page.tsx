@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/routing";
+import Heading from "@/components/ui/heading";
 import {
   DollarSign,
   FileText,
@@ -8,57 +8,70 @@ import {
   Shield,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Grid from "@/components/template/grid";
 
 export default function Page() {
   const t = useTranslations();
-  const keys = [
-    { icon: DollarSign, key: "price" },
-    { icon: FileText, key: "terms" },
-    { icon: Shield, key: "privacy" },
-    { icon: MessageCircle, key: "faqs" },
-    { icon: Heart, key: "support" },
-    { icon: Megaphone, key: "advertise" },
-  ] as const;
+  const resources = [
+    {
+      icon: DollarSign,
+      key: "price",
+      title: t("Resources.price.title"),
+      description: t("Resources.price.description"),
+      href: "/resources/price",
+    },
+    {
+      icon: FileText,
+      key: "terms",
+      title: t("Resources.terms.title"),
+      description: t("Resources.terms.description"),
+      href: "/resources/terms",
+    },
+    {
+      icon: Shield,
+      key: "privacy",
+      title: t("Resources.privacy.title"),
+      description: t("Resources.privacy.description"),
+      href: "/resources/privacy",
+    },
+    {
+      icon: MessageCircle,
+      key: "faqs",
+      title: t("Resources.faqs.title"),
+      description: t("Resources.faqs.description"),
+      href: "/resources/faqs",
+    },
+    {
+      icon: Heart,
+      key: "support",
+      title: t("Resources.support.title"),
+      description: t("Resources.support.description"),
+      href: "/resources/support",
+    },
+    {
+      icon: Megaphone,
+      key: "advertise",
+      title: t("Resources.advertise.title"),
+      description: t("Resources.advertise.description"),
+      href: "/resources/advertise",
+    },
+  ];
 
   return (
     <main>
-      <div className="max-w-2xl mx-auto text-center">
-        <p className="font-semibold leading-7 text-primary">
-          {t("Resources.subtitle")}
-        </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-          {t("Resources.title")}
-        </h1>
-        <p className="mt-4 text-base leading-snug text-muted-foreground">
-          {t("Resources.description")}
-        </p>
-      </div>
+      <div>
+        <Heading
+          title={t("Resources.title")}
+          subtitle={t("Resources.subtitle")}
+          description={t("Resources.description")}
+        />
 
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2">
-          {keys.map(({ icon: Icon, key }) => (
-            <Link
-              key={key}
-              href={`/resources/${key}`}
-              passHref
-              className="hover:scale-[1.02] duration-100">
-              <div className="relative pl-16">
-                <div className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                  <Icon className="w-6 h-6 text-background" />
-                </div>
-                <div className="text-lg font-semibold leading-7">
-                  {t(`Resources.${key}.title`)}
-                </div>
-                <p className="mt-2 text-muted-foreground leading-snug">
-                  {t(`Resources.${key}.description`)}
-                </p>
-                <p className="mt-2 text-sm underline underline-offset-2">
-                  {t("learnMore")}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <Grid
+          items={resources}
+          columns={2}
+          maxWidth="4xl"
+          className="mx-auto max-w-2xl lg:max-w-4xl"
+        />
       </div>
     </main>
   );

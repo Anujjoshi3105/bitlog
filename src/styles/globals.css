@@ -124,19 +124,24 @@
     @apply bg-background text-foreground scroll-smooth w-screen overflow-x-hidden font-mont;
   }
   main {
-    @apply py-52 px-6 sm:px-12 lg:px-32 mx-auto space-y-24;
+    @apply py-48 px-6 sm:px-12 lg:px-32 mx-auto space-y-12;
   }
   ul.bullet {
     @apply list-none;
   }
-
   ul.bullet li {
     @apply relative;
   }
-
   ul.bullet li::before {
     content: "▹";
     @apply absolute left-[-20px] top-[6px] leading-[12px];
+  }
+  p {
+    @apply text-muted-foreground;
+  }
+  h3,
+  h5 {
+    @apply text-primary font-bold;
   }
 }
 
@@ -151,23 +156,23 @@
 
 ::selection {
   background-color: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
+  color: hsl(var(--muted));
 }
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: hsl(var(--background));
+  background-color: hsl(var(--muted));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(var(--primary));
   border-radius: 8px;
-  border: 2px solid hsl(var(--background));
+  border: 2px solid hsl(var(--muted));
 }
 
 ::-webkit-scrollbar-track {
-  background-color: hsl(var(--background));
+  background-color: hsl(var(--muted));
   border-radius: 8px;
 }

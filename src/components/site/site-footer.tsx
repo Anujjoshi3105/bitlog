@@ -1,24 +1,56 @@
-import Newsletter from "./Newsletter";
-import { Link } from "@/i18n/routing";
+import { useMemo } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/button";
+import { Bug, Github } from "lucide-react";
+import Newsletter from "./Newsletter";
 
-export default function Footer() {
-  const t = useTranslations();
-  const explore = [
-    { href: "/trending", label: t("navLinks.trending") },
-    { href: "/community", label: t("navLinks.community") },
-    { href: "/topics", label: t("navLinks.topics") },
-  ];
-  const resource = [
-    { href: "/resources/faqs", label: t("navLinks.faqs") },
-    { href: "/resources/advertise", label: t("navLinks.advertise") },
-    { href: "/resources/support", label: t("navLinks.support") },
-  ];
+interface FooterLink {
+  href: string;
+  label: string;
+}
+
+function FooterLinks({ title, links }: { title: string; links: FooterLink[] }) {
   return (
-    <footer className="bg-muted/20 select-none">
+    <div className="space-y-1 flex flex-col">
+      <h4 className="text-lg font-bold uppercase mb-2">{title}</h4>
+      {links.map(({ href, label }) => (
+        <Link
+          key={label}
+          href={href}
+          className="hover:underline text-muted-foreground hover:text-foreground underline-offset-2">
+          {label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+export default function SiteFooter() {
+  const t = useTranslations();
+
+  const footerLinks = useMemo(
+    () => ({
+      explore: [
+        { href: "/trending", label: t("navLinks.trending") },
+        { href: "/community", label: t("navLinks.community") },
+        { href: "/topics", label: t("navLinks.topics") },
+      ],
+      resource: [
+        { href: "/resources/faqs", label: t("navLinks.faqs") },
+        { href: "/resources/advertise", label: t("navLinks.advertise") },
+        { href: "/resources/support", label: t("navLinks.support") },
+      ],
+    }),
+    [t]
+  );
+
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
+
+  return (
+    <footer className="bg-muted/20 border-t-2 select-none">
       <div className="p-8 px-12 text-sm">
         <div className="container items-center grid gap-6 md:grid-cols-2 lg:grid-cols-4 text-center md:text-left">
-          {/* Brand Section */}
           <div>
             <Link
               href="/"
@@ -30,66 +62,48 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
-            <h5 className="text-lg text-primary font-bold uppercase mb-2">
-              {t("navLinks.explore")}
-            </h5>
-            <ul className="space-y-1">
-              {explore.map(({ href, label }) => (
-                <li key={label}>
-                  <Link
-                    href={href}
-                    className="hover:underline underline-offset-2">
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FooterLinks
+            title={t("navLinks.explore")}
+            links={footerLinks.explore}
+          />
+          <FooterLinks
+            title={t("navLinks.resources")}
+            links={footerLinks.resource}
+          />
 
-          <div>
-            <h5 className="text-lg text-primary font-bold uppercase mb-2">
-              {t("navLinks.resources")}
-            </h5>
-            <ul className="space-y-1">
-              {resource.map(({ href, label }) => (
-                <li key={label}>
-                  <Link
-                    href={href}
-                    className="hover:underline underline-offset-2">
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Newsletter Section */}
           <Newsletter />
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="bg-primary text-background py-1 underline-offset-2 text-xs md:text-sm">
-        <div className="text-center flex flex-col-reverse md:flex-row justify-around items-center gap-2">
-          <p>
-            {t("Copyright")}&nbsp;
-            <Link href="/" className="hover:underline">
-              BITLOG
+      <div className="bg-muted py-1 underline-offset-2 text-xs md:text-sm text-center flex flex-col-reverse md:flex-row justify-around items-center gap-2">
+        <p>
+          {t("Copyright")}&nbsp;
+          <Link href="/" className="hover:underline text-primary">
+            BITLOG
+          </Link>
+          &nbsp;&copy; {currentYear}
+        </p>
+        <div className="grid grid-cols-3 gap-2">
+          {["privacy", "terms", "support"].map((link) => (
+            <Link
+              key={link}
+              href={`/resources/${link}`}
+              className="hover:underline">
+              {t(`navLinks.${link}`)}
             </Link>
-            &nbsp;&copy; {new Date().getFullYear()}
-          </p>
-          <div className="grid grid-cols-3 gap-2">
-            <Link href="/resources/privacy" className="hover:underline">
-              {t("navLinks.privacy")}
-            </Link>
-            <Link href="/resources/terms" className="hover:underline">
-              {t("navLinks.terms")}
-            </Link>
-            <Link href="/resources/support" className="hover:underline">
-              {t("navLinks.support")}
-            </Link>
-          </div>
+          ))}
+        </div>
+        <div className="flex gap-4">
+          {[Bug, Github].map((Icon, index) => (
+            <Button
+              key={index}
+              className="rounded-full"
+              size="smIcon"
+              variant="ghost">
+              <Icon aria-hidden="true" />
+              <span className="sr-only">{Icon.name}</span>
+            </Button>
+          ))}
         </div>
       </div>
     </footer>

@@ -7,32 +7,28 @@ import { useTranslations } from "next-intl";
 export default function CommunityCTA() {
   const t = useTranslations("Community.CTA");
   return (
-    <section>
-      <Card className="bg-muted">
-        <CardContent className="px-4 py-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t("title")}</h2>
-          <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
-            {t("description")}
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="gap-2">
-              <a
-                target="_blank"
-                href="https://discord.gg/XkSpxwVM"
-                rel="noopener noreferrer">
-                <Users className="h-5 w-5" />
-                {t("joinCommunity")}
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="gap-2">
-              <Link href="/resources/support">
-                <Heart className="h-5 w-5" />
-                {t("supportUs")}
-              </Link>
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </section>
+    <Card className="max-w-5xl mx-auto">
+      <CardContent className="px-6 py-12 sm:px-12 sm:py-16 text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold">{t("title")}</h2>
+        <p className="mt-4 mb-8">{t("description")}</p>
+        <div className="flex flex-wrap gap-4 justify-center">
+          <Button asChild size="lg">
+            <a
+              target="_blank"
+              href="https://discord.gg/XkSpxwVM"
+              rel="noopener noreferrer">
+              <Users />
+              {t("joinCommunity")}
+            </a>
+          </Button>
+          <Button asChild size="lg" variant="outline">
+            <Link href="/resources/support">
+              <Heart />
+              {t("supportUs")}
+            </Link>
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
   );
 }
