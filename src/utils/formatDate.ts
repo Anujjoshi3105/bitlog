@@ -1,10 +1,8 @@
 export function formatDate(date: Date | string): string {
   const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+    dateStyle: "long",
   };
   return typeof date === "string"
-    ? date
+    ? new Date(date).toLocaleDateString("en-US", options)
     : new Intl.DateTimeFormat("en-US", options).format(date);
 }

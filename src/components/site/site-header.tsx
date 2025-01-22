@@ -8,7 +8,7 @@ import { useState } from "react";
 import { containerVars, menuVars, mobileLinkVars } from "@/data/animate";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import User from "@/sections/Auth/User";
+import User from "@/components/pages/auth/Form/User";
 import { signOut, useSession } from "next-auth/react";
 
 export default function Header() {

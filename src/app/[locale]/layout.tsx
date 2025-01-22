@@ -5,7 +5,7 @@ import HolyLoader from "holy-loader";
 import { Locale, routing } from "@/i18n/routing";
 import { getLangDir } from "rtl-detect";
 import { Toaster } from "sonner";
-import { Providers } from "@/providers/providers";
+import { Providers } from "@/components/providers/providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Cookies from "@/components/Cookies";
 
@@ -33,7 +33,7 @@ export async function generateMetadata({
     },
     title: {
       default: t("title"),
-      template: `%s: ${t("title")}`,
+      template: `%s - Bitlog`,
     },
     description: t("description"),
     keywords: [
@@ -95,10 +95,9 @@ export default async function LocaleLayout({
     <html lang={locale} dir={direction} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/logo.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="relative antialiased">
-        <HolyLoader color="#1b2432" />
+        <HolyLoader color="#3c4759" />
         <NextIntlClientProvider messages={messages}>
           <Providers
             themeProps={{ attribute: "class", defaultTheme: "system" }}>

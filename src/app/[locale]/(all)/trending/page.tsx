@@ -1,12 +1,12 @@
-import Featured from "@/sections/Trending/Featured";
-import Latest from "@/sections/Trending/Latest";
-import React from "react";
+import { Metadata } from "next";
+import { pages } from "@/config/site";
+import Trending from "@/components/pages/trending/Trending";
+
+export const metadata: Metadata = {
+  title: pages.trending.title,
+  description: pages.trending.description,
+};
 
 export default function page() {
-  return (
-    <main>
-      <Featured />
-      <Latest />
-    </main>
-  );
+  return <Trending />;
 }

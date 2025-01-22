@@ -1,4 +1,11 @@
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
+import { pages } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: pages.dashboard.title,
+  description: pages.dashboard.description,
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

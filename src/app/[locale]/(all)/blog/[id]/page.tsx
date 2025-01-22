@@ -1,4 +1,4 @@
-import BlogPost from "@/sections/Blog/BlogPost";
+import BlogPost from "@/components/pages/blog/BlogPost";
 
 export default async function Page({
   params,

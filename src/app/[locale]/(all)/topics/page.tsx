@@ -1,5 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import tags from "@/data/tags.json";
+import { Metadata } from "next";
+import { pages } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: pages.topics.title,
+  description: pages.topics.description,
+};
+
 export default function page() {
   return (
     <div className="flex items-center justify-center h-[90vh] w-full">

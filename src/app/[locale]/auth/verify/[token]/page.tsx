@@ -11,6 +11,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+import { pages } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: pages.auth.verify.title,
+  description: pages.auth.verify.description,
+};
 
 type VerificationStatus = "success" | "error" | "invalid" | "expired";
 
@@ -100,7 +107,7 @@ function VerificationStatus({
   );
 }
 
-export default async function Page({
+export default async function VerificationPage({
   params,
 }: {
   params: Promise<{ token: string }>;

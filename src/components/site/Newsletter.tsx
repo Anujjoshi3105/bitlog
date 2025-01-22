@@ -30,7 +30,7 @@ export default function Newsletter() {
     <div>
       <h4 className="text-lg font-bold uppercase">{t("title")}</h4>
       <p className="max-w-xs mx-auto md:mx-0 mb-4 mt-1">{t("description")}</p>
-      <form className="flex items-stretch justify-center">
+      <form className="flex items-stretch">
         <input
           type="email"
           placeholder={t("placeholder")}

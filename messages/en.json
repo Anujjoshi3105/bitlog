@@ -12,7 +12,7 @@
   },
   "LocaleLayout": {
     "title": "Bitlog - The Future of Learning",
-    "description": "Bitlog is your go-to platform for exploring in-depth tutorials, expert insights, and real-world tech stories. Empowering developers with knowledge and fostering a vibrant tech community.",
+    "description": "Bitlog is a platform for developers, providing tutorials, expert insights, and tech stories to help you grow, learn, and connect with the tech community.",
     "keywords": "Tech Tutorials, Tech Insights, Developer Community, AI, Machine Learning, Quantum Computing, Computer Vision, Technology Archives, Learning Platform, Tech Articles, Innovation, Future of Learning,Programming Guides, Tech News"
   },
   "Search": "Search the latest Tech Tutorials, Insights, Stories...",
@@ -207,7 +207,7 @@
       "btn2": "Go to Login"
     },
     "Continue": "or continue with",
-    "privacy": "By selecting this you agree to our [Privacy Policy](/resources/privacy) and [Terms and Conditions](/resources/terms)."
+    "privacy": "By selecting this you agree to our [Privacy Policy](/privacy-policy) and [Terms and Conditions](/terms-and-conditions)."
   },
 
   "Home": {
@@ -226,9 +226,9 @@
     "topics": "Topics",
     "faqs": "FAQs",
     "advertise": "Advertise With Us",
-    "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions",
-    "support": "Support",
+    "privacy-policy": "Privacy Policy",
+    "terms-and-conditions": "Terms and Conditions",
+    "support-us": "Support",
     "explore": "Explore"
   },
   "Contact": {
@@ -252,7 +252,7 @@
     },
     "success": "Message sent successfully.",
     "error": "There was an error sending your message. Please try again later.",
-    "privacy": "By selecting this you agree to our [Privacy Policy](/resources/privacy) and [Terms and Conditions](/resources/terms).",
+    "privacy": "By selecting this you agree to our [Privacy Policy](/privacy-policy) and [Terms and Conditions](/terms-and-conditions).",
     "btn": {
       "label": "Send Message",
       "loading": "Sending..."
@@ -419,7 +419,7 @@
   "Terms": {
     "title": "Terms & Conditions",
     "date": "Last Updated: December 25, 2024",
-    "content": "## General Terms\n\n### Use of Our Service\nBy accessing and placing an order with Bitlog, you confirm your agreement to our policies. We are not liable for any indirect damages arising from your use or inability to use our site. We may change prices and policies at any time and will notify you of significant changes through email or our platform.\n\n### Content Ownership\nAll content stored and displayed on our website belongs to Bitlog. If you believe any content infringes your copyright or is pirated, please contact us. Upon verification, we will remove the infringing content within 3 to 6 months.\n\n## User Account\n\n### Account Responsibility\nFor some services, an account is required. Keep your account details confidential. Providing false information may lead to account termination.\n\n## Products and Services\n\n### Digital Product Delivery\nAll our products are 100% digital and delivered electronically. They can be accessed on your account page. We are not responsible for delays outside our control. If technology issues prevent access, you will find your purchases on the account page.\n\n### Order Cancellation\nWe may cancel orders at any time for any reason. If this happens, we will notify you and issue a refund.\n\n## Third-Party Links\n\n### External Sites\nOur website may include links to third-party sites. We are not responsible for their content or practices. Please review their terms and conditions.\n\n## Product Availability and Errors\n\n### Information Accuracy\nWe strive to provide up-to-date information about our 100% digital products, but errors in pricing and availability may occur. We reserve the right to correct any errors without liability.\n\n## Data Rights\n\n### Data Modification and Deletion\nFor details on how we handle data modification, deletion, and protect your privacy, please refer to our [Privacy Policy](/resources/privacy).\n\n## Changes to Terms\n\n### Liability Cap\nWe are not liable for data loss, lost profits, or any damages arising from the use of our site.\n\n## Governing Law and Jurisdiction\n\n### Legal Framework\nThese terms are governed by applicable federal laws and regulations. Any disputes arising from or relating to the terms shall be subject to the exclusive jurisdiction of the competent courts as determined by applicable law.\n\n## Contact Information\n\n### Queries\nIf you have questions about these terms or the handling of content on our site, please contact us via chat from our website. For concerns regarding copyright infringement, please contact us. Upon verification, we will take appropriate steps to remove such content within 3 to 6 months.\n\n*All the points listed here are yet to be fully achieved, but we are diligently working towards realizing them to the best of our abilities. This is a bootstrap project passionately run by developer [Anuj Joshi](https://anujjoshi.netlify.app), reflecting our vision of continuous improvement and innovation. We sincerely apologize for any inaccuracies or errors that may be present and encourage your [feedback](/contact) to help us correct and refine our efforts. If you wish to contribute, share suggestions, or [contact us](/contact), please don't hesitate to reach out. Together, we can build something remarkable.*",
+    "content": "## General Terms\n\n### Use of Our Service\nBy accessing and placing an order with Bitlog, you confirm your agreement to our policies. We are not liable for any indirect damages arising from your use or inability to use our site. We may change prices and policies at any time and will notify you of significant changes through email or our platform.\n\n### Content Ownership\nAll content stored and displayed on our website belongs to Bitlog. If you believe any content infringes your copyright or is pirated, please contact us. Upon verification, we will remove the infringing content within 3 to 6 months.\n\n## User Account\n\n### Account Responsibility\nFor some services, an account is required. Keep your account details confidential. Providing false information may lead to account termination.\n\n## Products and Services\n\n### Digital Product Delivery\nAll our products are 100% digital and delivered electronically. They can be accessed on your account page. We are not responsible for delays outside our control. If technology issues prevent access, you will find your purchases on the account page.\n\n### Order Cancellation\nWe may cancel orders at any time for any reason. If this happens, we will notify you and issue a refund.\n\n## Third-Party Links\n\n### External Sites\nOur website may include links to third-party sites. We are not responsible for their content or practices. Please review their terms and conditions.\n\n## Product Availability and Errors\n\n### Information Accuracy\nWe strive to provide up-to-date information about our 100% digital products, but errors in pricing and availability may occur. We reserve the right to correct any errors without liability.\n\n## Data Rights\n\n### Data Modification and Deletion\nFor details on how we handle data modification, deletion, and protect your privacy, please refer to our [Privacy Policy](/privacy-policy).\n\n## Changes to Terms\n\n### Liability Cap\nWe are not liable for data loss, lost profits, or any damages arising from the use of our site.\n\n## Governing Law and Jurisdiction\n\n### Legal Framework\nThese terms are governed by applicable federal laws and regulations. Any disputes arising from or relating to the terms shall be subject to the exclusive jurisdiction of the competent courts as determined by applicable law.\n\n## Contact Information\n\n### Queries\nIf you have questions about these terms or the handling of content on our site, please contact us via chat from our website. For concerns regarding copyright infringement, please contact us. Upon verification, we will take appropriate steps to remove such content within 3 to 6 months.\n\n*All the points listed here are yet to be fully achieved, but we are diligently working towards realizing them to the best of our abilities. This is a bootstrap project passionately run by developer [Anuj Joshi](https://anujjoshi.netlify.app), reflecting our vision of continuous improvement and innovation. We sincerely apologize for any inaccuracies or errors that may be present and encourage your [feedback](/contact) to help us correct and refine our efforts. If you wish to contribute, share suggestions, or [contact us](/contact), please don't hesitate to reach out. Together, we can build something remarkable.*",
     "btn": "Return to Home"
   },
   "Privacy": {
@@ -430,7 +430,7 @@
   },
   "Cookies": {
     "Banner": {
-      "description": "We use our own cookies as well as third-party cookies on our websites to enhance your experience, analyze our traffic, and for security and marketing. Select **Accept All** to allow them to be used. Read our **[Cookie Policy](/resources/cookies)**.",
+      "description": "We use our own cookies as well as third-party cookies on our websites to enhance your experience, analyze our traffic, and for security and marketing. Select **Accept All** to allow them to be used. Read our **[Cookie Policy](/cookies-policy)**.",
       "btn1": "Accept All",
       "btn2": "Necessary Only"
     },

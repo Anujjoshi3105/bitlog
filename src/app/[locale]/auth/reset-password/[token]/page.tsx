@@ -10,9 +10,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import ResetForm from "@/sections/Auth/ResetForm";
+import ResetForm from "@/components/pages/auth/Form/ResetForm";
+import { Metadata } from "next";
+import { pages } from "@/config/site";
 
-export default async function Page({
+export const metadata: Metadata = {
+  title: pages.auth.reset.title,
+  description: pages.auth.reset.description,
+};
+
+export default async function ResetPage({
   params,
 }: {
   params: Promise<{ token: string }>;
