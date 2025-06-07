@@ -2,7 +2,9 @@
 
 **[BITLOG](https://bitlog.netlify.app)** is a blog platform designed to deliver high-quality tutorials, insights, and tech stories to empower developers and foster a vibrant tech community. It combines advanced features and tools to create a seamless user experience for learners and content creators alike.
 
-![alt text](public/image.png)
+## [Live Demo](https://bitlog.netlify.app/)
+![bitlog](https://github.com/user-attachments/assets/5d1f756f-9cba-4270-a46e-fc5359ca2049)
+
 
 ## Table of Contents
 
